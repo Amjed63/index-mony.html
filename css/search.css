@@ -155,6 +155,9 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 400px){
+     .search-container{
+        justify-content: center;
+    }
     .input-search,
     .searchs{
         justify-content: center;
