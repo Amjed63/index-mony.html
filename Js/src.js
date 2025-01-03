@@ -9,39 +9,48 @@ const suggestions = document.getElementById("suggestions");
 const productsContainer = document.getElementById("products");
 
 
+// البحث عند الضغط على Enter في مربع الإدخال
+searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        const query = searchInput.value.trim().toLowerCase();
+
+        if (query.length >= 2) { // التحقق من أن الإدخال يحتوي على حرفين أو أكثر
+            const matchedProduct = products.find(product =>
+                product.name.toLowerCase().includes(query)
+            );
+
+            if (matchedProduct) {
+                // إذا تم العثور على المنتج
+                window.location.href = matchedProduct.link;
+            } else {
+                // إذا لم يتم العثور على المنتج
+                window.location.href = `search-results.html?query=${query}`;
+            }
+        } else {
+            alert("يرجى كتابة حرفين أو أكثر للبحث.");
+        }
+    }
+});
 
 // البحث عند الضغط على زر البحث
 const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click", () => {
     const query = searchInput.value.trim().toLowerCase();
-    if (query) {
-        // روابط متعددة بناءً على كلمات البحث
-        if (query.includes("سجافات")) {
-            window.location.href = "index-1.html";
-        } else if (query.includes("كوش")) {
-            window.location.href = "index-kusha.html";
+
+    if (query.length >= 2) { // التحقق من أن الإدخال يحتوي على حرفين أو أكثر
+        const matchedProduct = products.find(product =>
+            product.name.toLowerCase().includes(query)
+        );
+
+        if (matchedProduct) {
+            // إذا تم العثور على المنتج
+            window.location.href = matchedProduct.link;
         } else {
-            // رابط افتراضي إذا لم يتم العثور على تطابق
+            // إذا لم يتم العثور على المنتج
             window.location.href = `search-results.html?query=${query}`;
         }
-    }
-});
-
-// البحث عند الضغط على Enter في مربع الإدخال
-searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        const query = searchInput.value.trim().toLowerCase();
-        if (query) {
-            // روابط متعددة بناءً على كلمات البحث
-            if (query.includes("سجافات")) {
-                window.location.href = "index-1.html";
-            } else if (query.includes("كوش")) {
-                window.location.href = "index-kusha.html";
-            } else {
-                // رابط افتراضي إذا لم يتم العثور على تطابق
-                window.location.href = `search-results.html?query=${query}`;
-            }
-        }
+    } else {
+        alert("يرجى كتابة حرفين أو أكثر للبحث.");
     }
 });
 
