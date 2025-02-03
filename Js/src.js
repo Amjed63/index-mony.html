@@ -1,6 +1,9 @@
 const products = [
-    { id: 1, name: " سجافات", image: "img for card/7.jpg", link: "index-1.html" },
+    { id: 1, name: " سجافات", image: "img for card/7.jpg", link: "index-1.html" },   
+    { id: 1, name: " سجاف", image: "img for card/7.jpg", link: "index-1.html" },
     { id: 1, name: "كوش ", image: "img for card/k1.jpg", link: "index-kusha.html" },
+    { id: 1, name: "فساتين ", image: "img for card/dress2.jpg", link: "dress.html" },
+    { id: 1, name: "فستان ", image: "img for card/dress2.jpg", link: "dress.html" },
 ];
 
 
