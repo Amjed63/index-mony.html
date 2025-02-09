@@ -3,18 +3,6 @@
 
 // This is fot links of pages
 
-function showPage(pageId) {
-    // إخفاء جميع الصفحات
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
-
-    // عرض الصفحة المحددة
-    const activePage = document.getElementById(pageId);
-    activePage.classList.add('active');
-}
-
-// This is fot links of pages
-
      const prevBtn = document.getElementById("prev");
         const nextBtn = document.getElementById("next");
         const pagesContainer = document.querySelector(".pages");
