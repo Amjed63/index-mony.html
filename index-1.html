@@ -1,4 +1,67 @@
- <!DOCTYPE html><html lang="ar">
+
+    <style>
+        
+
+
+        .pagination {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: orange;
+            color: black;
+        }
+
+        button.disabled {
+            background-color: #444;
+            cursor: not-allowed;
+        }
+
+        .pages {
+            display: flex;
+            gap: 5px;
+            
+        }
+
+        .page {
+            background-color: #222;
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .page.active {
+            border: 2px solid orange;
+        }
+
+        .dots {
+            color: white;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+
+        /* إخفاء جميع الصفحات عدا النشطة */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <!DOCTYPE html><html lang="ar">
   <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title> موني للسجافات</title>
     <link rel="icon" href="img sejaf/logo-light.png">
@@ -233,4 +296,4 @@
    <script src="js/popper.min.js"></script>
    <script src="Js/scripts.js"></script>
 </body>
-                                                                                               </html>
+    </html>
