@@ -5,14 +5,6 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/index-home.css"><link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/search.css"><link rel="stylesheet" href="css/all.min.css"> <link rel="stylesheet" href="css/footer.css">
-      <style>
-        .gallery img, .gallery video {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
 
@@ -60,24 +52,8 @@
   
   </center>
        
-  <!-- Model Box for images-->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">صور إضافية من السجاف</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="gallery">
-                    <img id="modalImage1" src="" alt="الصورة الأولى" style="display: none;">
-                    <video id="modalVideo" controls style="display: none; width: 100%;"></video>
-                    <img id="modalImage2" src="" alt="الصورة الثانية" style="display: none;">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+ 
+
 
     
   <!------------End slide Start Card-------------------->
@@ -108,27 +84,9 @@
 <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card1"> 
        <div class="card"> <img src="img for card/1.jpg" alt="Card 1"> <div class="card-body">
           <h6 class="card-title text-primary">حديث</h6> <p class="card-text"> سجاف ورد جهتين</p>    
-     <!-- زرار فتح Model Box -->
-         <button class="btn btn-primary btn-lg open-modal"
-                        data-bs-toggle="modal" 
-                        data-bs-target="#myModal"
-                        data-image1="img for card/1m.jpg"
-                        data-image2="img for card/2m.jpg">  صورة السجاف </button>
-    <hr>
 <button class="open-modal-btn" onclick="openModal('card1')">حجز</button> </div> </div> </div>
  <!-- Card 2 -->
- <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card2"> <div class="card"> <img src="img for card/2.jpg" alt="Card 2"> <div class="card-body"> <h6 class="card-title text-primary">عصري حديث</h6> <p class="card-text">سجاف مثلث</p> 
-<button class="open-modal-btn" onclick="openModal('card2')">حجز</button> </div> </div> </div> 
-<!-- Card 3 --> 
-<div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card3"> <div class="card"> <img src="img for card/3m.jpg" alt="Card 3"> <div class="card-body"> <h6 class="card-title text-primary"> حديث</h6> <p class="card-text">سجاف مع ورد نص</p> 
-   <!-- زرار فتح Model Box -->
-         <button class="btn btn-primary btn-lg open-modal"
-                        data-bs-toggle="modal" 
-                        data-bs-target="#myModal"
-                        data-image1="img for card/3m.jpg"
-                        data-image2="img for card/3.jpg">  صورة السجاف </button>
-    <hr>
-<button class="open-modal-btn" onclick="openModal('card3')">حجز</button>
+ <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card2"> <div class="card"> <img src="img for card/2.jpg" alt="Card 2"> <div class="card-body"> <h6 class="card-title text-primary">عصري حديث</h6> <p class="card-text">سجاف مثلث</p> <button class="open-modal-btn" onclick="openModal('card2')">حجز</button> </div> </div> </div> <!-- Card 3 --> <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card3"> <div class="card"> <img src="img for card/3.jpg" alt="Card 3"> <div class="card-body"> <h6 class="card-title text-primary"> حديث</h6> <p class="card-text">سجاف مع ورد نص</p> <button class="open-modal-btn" onclick="openModal('card3')">حجز</button>
  </div> </div> </div> 
 <!-- Card 4 -->
        <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card6"> <div class="card"> <img src="img for card/6.jpg" alt="Card 6"> <div class="card-body"> <h6 class="card-title text-primary"> حديث</h6>
@@ -137,13 +95,6 @@
 </div> </div> </div> 
 <!-- Card 5 --> 
 <div class="col col-xl-3 col-md-6 mx-auto d-block col-12 p-1" id="card5"> <div class="card"> <img src="img for card/5.jpg" alt="Card 5"> <div class="card-body"> <h6 class="card-title text-primary"> حديث</h6> <p class="card-text">سجاف ورد كامل</p> 
-   <!-- زرار فتح Model Box -->
-         <button class="btn btn-primary btn-lg open-modal"
-                        data-bs-toggle="modal" 
-                        data-bs-target="#myModal"
-                        data-image1="img for card/5a.jpg"
-                        data-image2="img for card/5.jpg">  صورة السجاف </button>
-    <hr>
 <button class="open-modal-btn" onclick="openModal('card5')">حجز</button> 
 </div> </div> </div>
  <!-- Card 6 -->
@@ -286,6 +237,5 @@
    <script src="js/bootstrap.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="Js/scripts.js"></script>
-
 </body>
 </html>
