@@ -46,3 +46,27 @@
         });
 
         renderPagination();
+        
+        // تغيير اماكن cards
+        
+        document.addEventListener('DOMContentLoaded', function() {
+    const cardsContainer = document.querySelector('.cards-container'); // استبدل '.cards-container' بالعنصر الحاوي للبطاقات
+    const cards = Array.from(cardsContainer.children);
+    const storageKey = 'lastShuffleTime';
+    const hoursToShuffle = 27;
+    const now = new Date().getTime();
+    const lastShuffleTime = localStorage.getItem(storageKey);
+
+    if (!lastShuffleTime || (now - lastShuffleTime) > hoursToShuffle * 60 * 60 * 1000) {
+        shuffleCards();
+        localStorage.setItem(storageKey, now);
+    }
+
+    function shuffleCards() {
+        for (let i = cards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [cards[i], cards[j]] = [cards[j], cards[i]];
+        }
+        cards.forEach(card => cardsContainer.appendChild(card));
+    }
+});
