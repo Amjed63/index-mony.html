@@ -3,70 +3,52 @@
 
 // This is fot links of pages
 
-     const prevBtn = document.getElementById("prev");
-        const nextBtn = document.getElementById("next");
-        const pagesContainer = document.querySelector(".pages");
-        const pages = document.querySelectorAll(".page-content");
-        const totalPages = pages.length;
-        let currentPage = 1;
+const prevBtn = document.getElementById("prev"); const nextBtn = document.getElementById("next"); const pagesContainer = document.querySelector(".pages"); const pages = document.querySelectorAll(".page-content"); const totalPages = pages.length; let currentPage = 1;
 
-        function renderPagination() {
-            pagesContainer.innerHTML = "";
+function renderPagination() { pagesContainer.innerHTML = "";
 
-            // إنشاء أرقام الصفحات داخل البار
-            for (let i = 1; i <= totalPages; i++) {
-                const pageBtn = document.createElement("div");
-                pageBtn.classList.add("page");
-                pageBtn.textContent = i;
-                if (i === currentPage) pageBtn.classList.add("active");
-                pageBtn.addEventListener("click", () => goToPage(i));
-                pagesContainer.appendChild(pageBtn);
-            }
+for (let i = 1; i <= totalPages; i++) {
+    const pageBtn = document.createElement("div");
+    pageBtn.classList.add("page");
+    pageBtn.textContent = i;
+    if (i === currentPage) pageBtn.classList.add("active");
+    pageBtn.addEventListener("click", () => goToPage(i));
+    pagesContainer.appendChild(pageBtn);
+}
 
-            // تحديث حالة الأزرار
-            prevBtn.classList.toggle("disabled", currentPage === 1);
-            nextBtn.classList.toggle("disabled", currentPage === totalPages);
-        }
+prevBtn.classList.toggle("disabled", currentPage === 1);
+nextBtn.classList.toggle("disabled", currentPage === totalPages);
 
-        function goToPage(page) {
-            pages.forEach((p, index) => {
-                p.classList.toggle("hidden", index + 1 !== page);
-            });
+}
 
-            currentPage = page;
-            renderPagination();
-        }
+function goToPage(page) { pages.forEach((p, index) => { p.classList.toggle("hidden", index + 1 !== page); });
 
-        prevBtn.addEventListener("click", () => {
-            if (currentPage > 1) goToPage(currentPage - 1);
-        });
+currentPage = page;
+renderPagination();
 
-        nextBtn.addEventListener("click", () => {
-            if (currentPage < totalPages) goToPage(currentPage + 1);
-        });
+window.scrollTo({ top: 0, behavior: "smooth" }); // التمرير للأعلى بسلاسة
 
-        renderPagination();
-        
-        // تغيير اماكن cards
-        
-        document.addEventListener('DOMContentLoaded', function() {
-    const cardsContainer = document.querySelector('.cards-container'); // استبدل '.cards-container' بالعنصر الحاوي للبطاقات
-    const cards = Array.from(cardsContainer.children);
-    const storageKey = 'lastShuffleTime';
-    const hoursToShuffle = 27;
-    const now = new Date().getTime();
-    const lastShuffleTime = localStorage.getItem(storageKey);
+}
 
-    if (!lastShuffleTime || (now - lastShuffleTime) > hoursToShuffle * 60 * 60 * 1000) {
-        shuffleCards();
-        localStorage.setItem(storageKey, now);
-    }
+prevBtn.addEventListener("click", () => { if (currentPage > 1) goToPage(currentPage - 1); });
 
-    function shuffleCards() {
-        for (let i = cards.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [cards[i], cards[j]] = [cards[j], cards[i]];
-        }
-        cards.forEach(card => cardsContainer.appendChild(card));
-    }
+nextBtn.addEventListener("click", () => { if (currentPage < totalPages) goToPage(currentPage + 1); });
+
+renderPagination();
+
+// تحسين كود تغيير ترتيب البطاقات
+
+document.addEventListener("DOMContentLoaded", function() { const cardsContainer = document.querySelector(".cards-container"); const cards = Array.from(cardsContainer.children); const storageKey = "lastShuffleTime"; const hoursToShuffle = 27; const now = Date.now(); const lastShuffleTime = localStorage.getItem(storageKey);
+
+if (!lastShuffleTime || (now - lastShuffleTime) > hoursToShuffle * 60 * 60 * 1000) {
+    shuffleCards();
+    localStorage.setItem(storageKey, now);
+}
+
+function shuffleCards() {
+    cards.sort(() => Math.random() - 0.5);
+    cards.forEach(card => cardsContainer.appendChild(card));
+}
+
 });
+
