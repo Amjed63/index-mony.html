@@ -1,10 +1,94 @@
 *,ul{margin:0;padding:0}.copyright-text p a,.footer-menu li:hover a,.footer-widget ul li a:hover,.single-cta i{color:#ff5e14}*,.navs{text-decoration:none}*{font-family:poppins,sans-serif;box-sizing:border-box;list-style:none}::-webkit-scrollbar{width:0}body{min-height:100vh}.footer-section{background:#151414;position:relative;margin-top:10%}.footer-cta{border-bottom:1px solid #373636}.single-cta i{font-size:30px;float:left;margin-top:8px}.cta-text{padding-left:15px;display:inline-block}.cta-text h4{color:#fff;font-size:20px;font-weight:600;margin-bottom:2px}.cta-text span{color:#757575;font-size:15px}.footer-content{position:relative;z-index:2}.footer-pattern img{position:absolute;top:0;left:0;height:330px;background-size:cover;background-position:100% 100%}.footer-logo{margin-bottom:30px}.footer-logo img{max-width:200px}.footer-text p{margin-bottom:14px;font-size:14px;color:#7e7e7e;line-height:28px}.footer-social-icon span{color:#fff;display:block;font-size:20px;font-weight:700;font-family:Poppins,sans-serif;margin-bottom:20px}.footer-social-icon a{color:#fff;font-size:16px;margin-right:15px}.footer-social-icon i{height:40px;width:40px;text-align:center;line-height:38px;border-radius:50%}.facebooks-bg{background:#3b5998}.twitter-bg{background:#55acee}.google-bg{background:#dd4b39}.footer-widget-heading h3{color:#fff;font-size:20px;font-weight:600;margin-bottom:40px;position:relative}.footer-widget-heading h3::before{content:"";position:absolute;left:0;bottom:-15px;height:2px;width:50px;background:#ff5e14}.footer-widget ul li{display:inline-block;float:left;width:50%;margin-bottom:12px;}.footer-widget ul li a{color:#878787;text-transform:capitalize}.subscribe-form{position:relative;overflow:hidden}.subscribe-form input{width:100%;padding:14px 28px;background:#2e2e2e;border:1px solid #2e2e2e;color:#fff}.subscribe-form button{position:absolute;right:0;background:#ff5e14;padding:13px 20px;border:1px solid #ff5e14;top:0}.subscribe-form button i{color:#fff;font-size:22px;transform:rotate(-6deg)}.copyright-text p,.footer-menu li a{font-size:14px;color:#878787}.copyright-area{background:#202020;padding:25px 0}.copyright-text p{margin:0}.footer-menu li{display:inline-block;margin-left:20px}.facebooks,.linkedin,.twitter{width:10%}@media only screen and (max-width:950px){.facebooks,.linkedin,.twitter{width:8%;margin:15px auto;display:fixed;justify-content:center;align-items:center}}.h1{height:none}.sli{font-family:senc}@media only screen and (max-width:600px){.btns,.buton-cards{font-size:1rem}.carousel{height:30vh}.btns{width:110px}.emile{width:220%}.card-title{font-size:1.6rem}.w-11{width:30px}.h{height:138%}.ccn{display:fixed;z-index:99999999}}@media only screen and (max-width:850px){.imgf{display:none}}.navs{display:block;padding:.5rem 1rem;color:#f0c400;font-size:1.1rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}@media (prefers-reduced-motion:reduce){.nav-link{transition:none}}.navs:hover{color:#fbdf06}.imglogo{width:10vh}
 
-.my-phone{
-    padding: 8px 8px;
-    background-color: #008cff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #128C7E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #36A100;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+	
+/* From Uiverse.io by aadium */ 
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+
+.phone {
+  background-color: #9F9F9F;
+}
+
+.phone svg {
+  fill: #f2f2f2;
+}
+
+.phone:hover svg {
+  fill: #5E605C;
 }
