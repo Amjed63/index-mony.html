@@ -1,5 +1,4 @@
 let btn = document.getElementById('scro');
-
 onscroll= function(){
     if(scrollY >=260){
         btn.style.display= 'block';
