@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>أرسل تعليقك</title>
+</head>
+<body style="direction: rtl; font-family: Arial; padding: 20px;">
+<a href="index.html">الصفحه الرئيسيه </a>
+  <h2>أرسل تعليقك على السجافة</h2>
+  <input type="text" id="name" placeholder="اسمك" style="margin-bottom: 10px; width: 300px;"><br>
+  <textarea id="message" placeholder="تعليقك" rows="4" style="width: 300px;"></textarea><br>
+  <button onclick="sendComment()">إرسال</button>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "ضع_هنا_API_KEY",
+      authDomain: "ضع_هنا_authDomain",
+      projectId: "ضع_هنا_projectId",
+      storageBucket: "ضع_هنا_storageBucket",
+      messagingSenderId: "ضع_هنا_senderId",
+      appId: "ضع_هنا_appId"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    async function sendComment() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+
+      try {
+        await addDoc(collection(db, "comments"), {
+          name: name,
+          message: message,
+          date: new Date().toISOString()
+        });
+        alert("تم إرسال تعليقك بنجاح");
+        document.getElementById("name").value = "";
+        document.getElementById("message").value = "";
+      } catch (e) {
+        alert("حدث خطأ أثناء الإرسال");
+        console.error(e);
+      }
+    }
+  </script>
+
+</body>
+</html>
