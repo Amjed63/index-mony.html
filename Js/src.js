@@ -96,3 +96,21 @@ document.addEventListener("click", (e) => {
         suggestions.style.display = "none";
     }
 });
+
+//============== loading-screen 
+  function hideLoading() {
+    const loader = document.getElementById("loading-screen");
+    if (loader) loader.style.display = "none";
+  }
+
+  // بعد 8 ثواني: عرض رسالة ضعف الاتصال
+  setTimeout(() => {
+    const message = document.getElementById("loading-message");
+    if (message) {
+      message.innerHTML = "📡 الاتصال ضعيف. يُرجى التحقق من الشبكة.";
+    }
+  }, 8000);
+
+  // بعد تحميل الصفحة أو بعد 15 ثانية: إخفاء شاشة التحميل
+  window.addEventListener("load", hideLoading);
+  setTimeout(hideLoading, 15000);
