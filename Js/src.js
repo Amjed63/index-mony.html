@@ -107,7 +107,7 @@ document.addEventListener("click", (e) => {
   setTimeout(() => {
     const message = document.getElementById("loading-message");
     if (message) {
-      message.innerHTML = "📡 الاتصال ضعيف. يُرجى التحقق من الشبكة.";
+      message.innerHTML = "يرجى الانتظار قليلا‌ لتحميل الصفحه ☺";
     }
   }, 8000);
 
