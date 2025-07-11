@@ -109,7 +109,7 @@ document.addEventListener("click", (e) => {
     if (message) {
       message.innerHTML = "يرجى الانتظار قليلا‌ لتحميل الصفحه ☺";
     }
-  }, 8000);
+  }, 6000);
 
   // بعد تحميل الصفحة أو بعد 15 ثانية: إخفاء شاشة التحميل
   window.addEventListener("load", hideLoading);
