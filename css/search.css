@@ -21,7 +21,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #007BFF;
+    border-color: #d4a017;
     outline: none;
 }
 
@@ -93,10 +93,76 @@ input[type="text"]:focus {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007BFF;
+    background-color: #DEAD00;
     border: none;
     border-radius: 25px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product a,
+.links-card,
+.searchs:hover {
+    background-color: #d4a017;
+    color: #fff;
+}
+
+.links-card{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.links-card:hover{
+    color: #fff;
+    background: #0067d4;
+}
+
+.reserve-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #218838;
+}
+.hid-card{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .products {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 400px){
+     .search-container{
+        justify-content: center;
+    }
+    .input-search,
+    .searchs{
+        justify-content: center;
+    }
+}
     transition: background-color 0.3s ease;
 }
 
@@ -163,3 +229,4 @@ input[type="text"]:focus {
         justify-content: center;
     }
 }
+
