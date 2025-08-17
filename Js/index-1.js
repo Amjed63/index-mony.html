@@ -1,5 +1,15 @@
-
-// modal box
+//////////////////////////////Check Box//////////////////////////////
+let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach((box) => {
+  box.addEventListener('change', function() {
+    if(this.checked){
+      checkboxes.forEach((other) => {
+        if(other !== this) other.checked = false;
+      });
+    }
+  });
+});
+///////////////////////// modal box/////////////////////
 
 let modal = document.getElementById("myModal");
 let closeModalBtn = document.getElementById("closeModal");
@@ -39,7 +49,7 @@ window.addEventListener("click", function(e){
 
 
 
-// Pages /////////
+/////////////////// Pages ///////////////////
 
 (function () {
   const container = document.querySelector('.cards');
