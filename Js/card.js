@@ -8,12 +8,14 @@ function openModal(e) {
   let n = l.substring(l.lastIndexOf("/") + 1);
 
   // الحصول على العنوان والوصف
+  let k = t.querySelector(".number").innerText;
   let a = t.querySelector(".card-title").innerText;
   let o = t.querySelector(".card-text").innerText;
 
   // إعداد نص الرسالة
   let r = `مرحبًا، أرغب في حجز هذا العنصر:
 
+رقم الكوشه: ${k}
   العنوان: ${a}
   الوصف: ${o}
   `;
