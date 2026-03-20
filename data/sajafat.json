@@ -1,0 +1,458 @@
+[
+  {
+    "id": 1,
+    "name": "سجاف ملكي",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/649039927_26275820118696667_1242744005428028637_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=dOR6Fk1GrvkQ7kNvwG_LHPp&_nc_oc=Adqgh-OLsuhMeYUC11iz-lencWZYELbmZZUVjnf5ek41CgfGHX8GR-fti8Sk52ywkhE&_nc_zt=23&_nc_ht=scontent.fcai19-3.fna&_nc_gid=qHrrPVt_jbfGbM07UCfpFg&_nc_ss=8&oh=00_AfzskOBrzeXh01gzAcdCZ3YnV2qgI_Lcla1AHUpqLiodDg&oe=69C1D12C",
+    "description": "سجاف فاخر بتصميم ملوكي يناسب المناسبات الخاصة.",
+    "features": [
+      "خامة عالية الجودة",
+      "تصميم أنيق",
+      "مناسب لجميع القاعات"
+    ],
+    "gallery": [
+      "img/img/1.jpg",
+      "img/img/1m.jpg",
+      "img/img/2m.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "تراثي",
+    "color": "رمادي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 2,
+    "name": "سجاف مودرن بسيط",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/648999925_26275820135363332_5645905258448479659_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=dC6RUl2hBV4Q7kNvwFzFxqv&_nc_oc=AdrGkCEtRAXGNFmCyvl-YGo1sgVb2RAg7xkPpcLYiSooKRqaWLF8jOEaGvbwqgZbhSM&_nc_zt=23&_nc_ht=scontent.fcai19-3.fna&_nc_gid=1DjvhMGgLuZdzWpie6iDdw&_nc_ss=8&oh=00_AfxuPBnP3zckNpeXTWoWOkD0oKpk5uPOCugYK7R1JwaLAg&oe=69C1FB0F",
+    "description": "لمسة عصرية ونظيفة بمظهر أنيق.",
+    "features": [
+      "تصميم عصري",
+      "سهل النقل والتركيب",
+      "سعر مناسب"
+    ],
+    "gallery": [
+      "img/img/2.jpg",
+      "img/img/2m.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "سكري",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 3,
+    "name": "سجاف جدر كلاسيكي",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/648558392_26274182058860473_6251401755623376596_n.jpg?stp=c96.0.768.768a_dst-jpg_s206x206_tt6&_nc_cat=102&ccb=1-7&_nc_sid=a934a8&_nc_ohc=3oTvPfcGFDMQ7kNvwHZeY6F&_nc_oc=AdrgaQGnWtIR2Z_DfuSXAvDArt1IoA4DKA6mMMFt6K2wgSAFTs2HN6w1IZEgaWsazrY&_nc_zt=23&_nc_ht=scontent.fcai19-3.fna&_nc_gid=Hhoea0wT8xF3d8RNLmnPgw&_nc_ss=8&oh=00_AfxdidVrbPf2HUFMad9M9AhTHdudaqa-x8zWKuiq2PCoWg&oe=69C1D448",
+    "description": "قالب ثابت وأنيق بطابع كلاسيكي.",
+    "features": [
+      "قالب كلاسيكي",
+      "خامات متينة",
+      "مناسب للصالات الكبيرة"
+    ],
+    "gallery": [
+      "img/img/1.jpg",
+      "img/img/1m.jpg",
+      "img/img/2m.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "كلاسيكي",
+    "color": "سكري",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 4,
+    "name": "سجاف عصري ملون",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "img/img/4.jpg",
+    "description": "ألوان زاهية وتصميم شبابي.",
+    "features": [
+      "ألوان جذابة",
+      "تصميم قوي",
+      "خامات مرنة"
+    ],
+    "gallery": [
+      "img/img/4.jpg",
+      "img/img/5.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "أحمر",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 5,
+    "name": "سجاف مهم فاخر",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/5.jpg",
+    "description": "تفاصيل دقيقة وخامات ممتازة.",
+    "features": [
+      "تفاصيل دقيقة",
+      "خامات ممتازة",
+      "خدمة تركيب"
+    ],
+    "gallery": [
+      "img/img/5.jpg",
+      "img/img/5a.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "فاخر",
+    "color": "سكري",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 6,
+    "name": "سجاف جدر صغير",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/6.jpg",
+    "description": "مناسب للمساحات الضيقة.",
+    "features": [
+      "مناسب للمساحات الصغيرة",
+      "خفة وزن",
+      "سهل التخزين"
+    ],
+    "gallery": [
+      "img/img/6.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "مودرن",
+    "color": "سكري",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 7,
+    "name": "كوشة ملكية",
+    "category": "كوشة",
+    "type": "فاخرة",
+    "image": "img/img/k1.jpg",
+    "description": "كوشة فاخرة بتصاميم قطع الذهب والفضة.",
+    "features": [
+      "تصميم ملكي",
+      "خامات فاخرة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/k1.jpg",
+      "img/img/k2.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "تراثي",
+    "color": "ذهبي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 8,
+    "name": "كوشة عصرية",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "img/img/k2.jpg",
+    "description": "كوشة بتصميم عصري وألوان مشرقة.",
+    "features": [
+      "تصميم عصري",
+      "ألوان جذابة",
+      "خفة وزن"
+    ],
+    "gallery": [
+      "img/img/k2.jpg",
+      "img/img/k3.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 9,
+    "name": "كوشة بسيطة أنيقة",
+    "category": "كوشة",
+    "type": "عملية",
+    "image": "img/img/k3.jpg",
+    "description": "كوشة بسيطة وأنيقة مع تفاصيل دقيقة.",
+    "features": [
+      "تصميم بسيط",
+      "سعر مناسب",
+      "سهل التركيب"
+    ],
+    "gallery": [
+      "img/img/k3.jpg",
+      "img/img/k4.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "كلاسيكي",
+    "color": "أحمر",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 10,
+    "name": "فستان زفاف كلاسيكي",
+    "category": "فساتين",
+    "type": "زفاف",
+    "image": "img/img/dress1.jpg",
+    "description": "فستان زفاف كلاسيكي بتصميم فريد وخامات فاخرة.",
+    "features": [
+      "خامة حرير",
+      "تطريز يدوي",
+      "قابل للتعديل"
+    ],
+    "gallery": [
+      "img/img/dress1.jpg",
+      "img/img/dress2.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "كلاسيكي",
+    "color": "أبيض",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 11,
+    "name": "فستان عصري مودرن",
+    "category": "فساتين",
+    "type": "عصري",
+    "image": "img/img/dress2.jpg",
+    "description": "فستان عصري برقة وأناقة بألوان متعددة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/dress2.jpg",
+      "img/img/dress3.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 12,
+    "name": "فستان سهرة أنيق",
+    "category": "فساتين",
+    "type": "سهرة",
+    "image": "img/img/dress3.jpg",
+    "description": "فستان سهرة براقع وتلميع فاخر.",
+    "features": [
+      "براقع حقيقية",
+      "خيطة ذهبية",
+      "تصميم ملفت"
+    ],
+    "gallery": [
+      "img/img/dress3.jpg",
+      "img/img/dress4.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "فاخر",
+    "color": "أسود",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 13,
+    "name": "سجاف تراثي فخم",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "img/img/17.jpg",
+    "description": "تصميم تراثي بطابع أصيل وخامات متينة.",
+    "features": [
+      "تصميم تراثي أصيل",
+      "خامات محلية فاخرة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/17.jpg",
+      "img/img/18.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "تراثي",
+    "color": "بني",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 14,
+    "name": "سجاف مهم متطور",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/18.jpg",
+    "description": "سجاف مهم بتقنيات حديثة وألوان عصرية.",
+    "features": [
+      "تقنيات حديثة",
+      "ألوان عصرية",
+      "سهل الصيانة"
+    ],
+    "gallery": [
+      "img/img/18.jpg",
+      "img/img/19.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 15,
+    "name": "كوشة مزخرفة",
+    "category": "كوشة",
+    "type": "فاخرة",
+    "image": "img/img/k4.jpg",
+    "description": "كوشة مزخرفة بتفاصيل يدوية دقيقة.",
+    "features": [
+      "تزخرفات يدوية",
+      "تصميم حصري",
+      "خامات فاخرة جداً"
+    ],
+    "gallery": [
+      "img/img/k4.jpg",
+      "img/img/k7.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "تراثي",
+    "color": "ذهبي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 16,
+    "name": "كوشة حديثة متعددة الألوان",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "img/img/k7.jpg",
+    "description": "كوشة بألوان متعددة وتصميم عصري جداً.",
+    "features": [
+      "ألوان متعددة",
+      "تصميم عصري",
+      "خفيفة الوزن"
+    ],
+    "gallery": [
+      "img/img/k7.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 17,
+    "name": "فستان زفاف فاخر",
+    "category": "فساتين",
+    "type": "زفاف",
+    "image": "img/img/dress4.jpg",
+    "description": "فستان زفاف بتطريز يدوي وخامة حرير خالص.",
+    "features": [
+      "حرير خالص",
+      "تطريز يدوي فاخر",
+      "قابل للتعديل كاملاً"
+    ],
+    "gallery": [
+      "img/img/dress4.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "كلاسيكي",
+    "color": "أبيض",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 18,
+    "name": "فستان عصري ملون جميل",
+    "category": "فساتين",
+    "type": "عصري",
+    "image": "img/img/dress1.jpg",
+    "description": "فستان عصري بألوان متناسقة وتصميم عملي.",
+    "features": [
+      "تصميم عملي",
+      "خامة مريحة",
+      "ألوان متناسقة"
+    ],
+    "gallery": [
+      "img/img/dress1.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "فيروزي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 19,
+    "name": "سجاف جدر ملكي راقي",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/19.jpg",
+    "description": "سجاف بتصميم ملكي واحترافي جداً.",
+    "features": [
+      "تصميم ملكي",
+      "خامات ممتازة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/19.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "فاخر",
+    "color": "ذهبي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 20,
+    "name": "سجاف مهم حديث",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/8.jpg",
+    "description": "سجاف مهم بطابع عصري وحديث جداً.",
+    "features": [
+      "تصميم حديث",
+      "خامات مختارة",
+      "سعر مناسب"
+    ],
+    "gallery": [
+      "img/img/8.jpg"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/ezaxy.store",
+    "phone": "+967766202116",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "info@ezaxy.store"
+  }
+]
