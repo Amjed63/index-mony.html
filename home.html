@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>موني — تأجير السجافات والكوشات والفساتين رمالون</title>
-  <meta name="description" content="موني متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لمناسباتك">
+  <title>موني - تأجير السجافات والكوشات والفساتين الفاخرة</title>
+  <meta name="description" content="موني - متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك بأسعار منافسة">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -14,136 +14,148 @@
       --black:#0b0b0b;
       --muted:#333;
       --card:#fff;
+      --glass: rgba(255,255,255,0.9);
       --maxw:1400px;
+      --radius:14px;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:'Tajawal',sans-serif;background:#fafafa;color:var(--black);-webkit-font-smoothing:antialiased}
+    body{margin:0;font-family:'Tajawal',sans-serif;background:#f8f6f1;color:var(--black);-webkit-font-smoothing:antialiased}
     a{color:inherit;text-decoration:none}
 
     /* HEADER */
     header.site-header{position:sticky;top:0;z-index:1000;background:var(--white);box-shadow:0 2px 12px rgba(0,0,0,0.08)}
     .header-inner{max-width:var(--maxw);margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
     .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:50px;height:50px;border-radius:10px;overflow:hidden;border:2px solid rgba(184,134,11,0.15)}
+    .logo{width:60px;height:60px;border-radius:10px;overflow:hidden;border:2px solid rgba(184,134,11,0.15)}
     .logo img{width:100%;height:100%;object-fit:contain;display:block}
-    .brand-text {display:flex;flex-direction:column}
+    .brand-text{display:flex;flex-direction:column}
     .site-title{color:var(--gold);font-weight:900;font-size:18px;margin:0}
-    .site-sub{color:var(--muted);font-weight:700;font-size:11px;margin:0}
-    .menu-toggle{display:none;border:none;background:#b8860b;color:#fff;font-size:20px;padding:8px 10px;border-radius:8px;cursor:pointer}
-    .nav-links{display:flex;gap:16px;align-items:center}
-    .nav-links a{color:var(--black);font-weight:700;text-decoration:none;transition:color .2s;font-size:14px}
-    .nav-links a:hover{color:var(--gold)}
-    .nav-links .btn-shop{background:var(--gold);color:#fff;padding:10px 20px;border-radius:8px;transition:all .2s}
-    .nav-links .btn-shop:hover{background:#aa7a0a;transform:translateY(-2px)}
-    @media (max-width:860px){
+    .site-sub{color:var(--muted);font-weight:700;font-size:12px;margin:0}
+
+    /* nav - tabs */
+    nav.main-nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap;transition:all .3s;}
+    .menu-toggle{display:none;border:none;background:#b8860b;color:#fff;font-size:20px;padding:8px 10px;border-radius:8px;cursor:pointer;margin-left:auto}
+    nav.main-nav button, nav.main-nav a{padding:10px 14px;border:none;border-radius:8px;font-weight:700;background:transparent;color:var(--black);cursor:pointer;transition:all .2s;font-family:inherit;display:inline-flex; align-items:center;gap:8px;}
+    nav.main-nav button:hover, nav.main-nav a:hover{background:rgba(184,134,11,0.08)}
+    nav.main-nav button.active{background:var(--gold);color:#fff}
+    nav.main-nav a{font-size:14px;text-decoration:none;}
+    @media(max-width:860px){
       .menu-toggle{display:block}
-      .nav-links{display:none;flex-direction:column;width:100%;margin-top:8px;}
-      .nav-links.open{display:flex}
-      .nav-links a{width:100%;justify-content:center;}
+      nav.main-nav{display:none;position:fixed;top:80px;right:12px;left:12px;background:rgba(255,255,255,0.98);border:1px solid rgba(184,134,11,0.2);border-radius:12px;padding:10px;flex-direction:column;gap:8px;box-shadow:0 10px 35px rgba(0,0,0,0.2);z-index:1002;}
+      nav.main-nav.open{display:flex}
+      nav.main-nav button, nav.main-nav a{width:100%;justify-content:center;}
     }
 
-    /* HERO SLIDER */
-    .hero-slider{position:relative;height:600px;background:linear-gradient(135deg, #fffaf6 0%, #fff 100%);overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .8s;padding:60px 24px;text-align:center;background-size:cover;background-position:center}
-    .slide.active{display:flex;opacity:1}
-    .slide-content{max-width:600px;z-index:2;position:relative}
-    .slide-tag{display:inline-block;background:var(--gold);color:#fff;padding:8px 16px;border-radius:20px;font-weight:900;font-size:12px;margin-bottom:16px}
-    .slide h1{font-size:48px;margin:0 0 16px;color:var(--gold);font-weight:900;line-height:1.2}
-    .slide p{font-size:18px;margin:0 0 24px;color:var(--black);font-weight:700;line-height:1.6}
-    .slide-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-    .btn{padding:14px 32px;border:0;border-radius:10px;cursor:pointer;font-weight:900;transition:all .3s;font-size:14px;font-family:inherit}
-    .btn-primary{background:var(--gold);color:#fff;box-shadow:0 6px 20px rgba(184,134,11,0.3)}
-    .btn-primary:hover{background:#aa7a0a;transform:translateY(-3px);box-shadow:0 9px 30px rgba(184,134,11,0.4)}
-    .btn-secondary{background:transparent;color:var(--gold);border:2px solid var(--gold)}
-    .btn-secondary:hover{background:var(--gold);color:#fff}
-    .slider-dots{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:3}
-    .dot{width:12px;height:12px;border-radius:50%;background:rgba(184,134,11,0.3);cursor:pointer;transition:all .3s;border:2px solid transparent}
-    .dot.active{background:var(--gold);width:30px;border-radius:6px}
+    /* hero banner */
+    .hero{max-width:var(--maxw);margin:24px auto;padding:40px;border-radius:14px;background:linear-gradient(135deg,#fffaf6,#fff);box-shadow:0 10px 40px rgba(184,134,11,0.08);text-align:center}
+    .hero h1{color:var(--gold);font-size:32px;margin:0 0 12px;font-weight:900}
+    .hero p{color:var(--black);margin:0;font-weight:700;font-size:16px}
 
-    /* FEATURES */
-    .features{max-width:var(--maxw);margin:60px auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
-    .feature-card{padding:24px;border-radius:16px;background:var(--white);box-shadow:0 4px 15px rgba(0,0,0,0.08);text-align:center;transition:all .3s}
-    .feature-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgba(0,0,0,0.12)}
-    .feature-icon{font-size:48px;margin-bottom:12px;display:block}
-    .feature-card h3{color:var(--gold);font-weight:900;margin:12px 0;font-size:18px}
-    .feature-card p{color:var(--muted);font-weight:700;font-size:13px;line-height:1.6;margin:0}
+    /* container */
+    .container{max-width:var(--maxw);margin:24px auto;padding:0 24px 40px}
 
-    /* CATEGORIES */
-    .categories{max-width:var(--maxw);margin:80px auto;padding:0 24px}
-    .section-title{text-align:center;font-size:36px;font-weight:900;color:var(--gold);margin:0 0 48px}
-    .categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-    .category-card{position:relative;height:320px;border-radius:16px;overflow:hidden;cursor:pointer;transition:all .4s;box-shadow:0 8px 25px rgba(0,0,0,0.1)}
-    .category-card img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-    .category-card:hover img{transform:scale(1.1)}
-    .category-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.4),rgba(184,134,11,0.4));display:flex;align-items:center;justify-content:center;transition:all .3s}
-    .category-card:hover .category-overlay{background:linear-gradient(135deg,rgba(0,0,0,0.6),rgba(184,134,11,0.6))}
-    .category-title{color:#fff;font-size:28px;font-weight:900;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
+    /* filters */
+    .filters{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:24px;padding:16px;background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+    .filter{background:var(--card);padding:10px 16px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,0.03);border:2px solid transparent;cursor:pointer;transition:all .2s}
+    .filter:hover{border-color:var(--gold)}
+    .filter input[type=radio]{width:18px;height:18px;cursor:pointer}
+    .filter input[type=radio]:checked{accent-color:var(--gold)}
+    .filter label{cursor:pointer;font-weight:700}
 
-    /* SPECIALS */
-    .specials{background:linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);color:#fff;padding:60px 24px;margin:80px 0}
-    .specials-content{max-width:var(--maxw);margin:0 auto}
-    .specials-header{text-align:center;margin-bottom:48px}
-    .specials-header h2{color:var(--gold);font-size:36px;font-weight:900;margin:0 0 12px}
-    .specials-header p{font-size:16px;font-weight:700;color:#ccc;margin:0}
-    .specials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-    .special-item{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);padding:24px;border-radius:16px;border:1px solid rgba(184,134,11,0.2);transition:all .3s;text-align:center}
-    .special-item:hover{background:rgba(184,134,11,0.1);border-color:var(--gold);transform:translateY(-4px)}
-    .special-icon{font-size:40px;margin-bottom:12px}
-    .special-item h3{margin:0 0 8px;font-weight:900;color:var(--gold)
-;font-size:18px}
-    .special-item p{margin:0;font-size:13px;color:#ccc;font-weight:700;line-height:1.6}
-    .special-tag{display:inline-block;background:var(--gold);color:#000;padding:6px 12px;border-radius:20px;font-weight:900;font-size:11px;margin-top:12px}
+    /* grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:24px}
+    .card{background:var(--card);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-height:400px;box-shadow:0 8px 30px rgba(0,0,0,0.08);transition:all .3s;border:1px solid rgba(184,134,11,0.08)}
+    .card:hover{transform:translateY(-8px);box-shadow:0 16px 50px rgba(184,134,11,0.12)}
+    .card-media{height:240px;overflow:hidden;background:#f9f9f9;display:flex;align-items:center;justify-content:center;position:relative}
+    .card-media img{width:100%;height:100%;object-fit:contain;padding:8px;display:block;transition:transform .3s ease}
+    .card:hover .card-media img{transform:scale(1.02)}
+    .card-badge{position:absolute;top:12px;left:12px;background:var(--gold);color:#fff;padding:6px 12px;border-radius:20px;font-weight:900;font-size:12px}
+    .card-body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+    .title{font-weight:900;color:var(--gold);font-size:18px;line-height:1.3}
+    .desc{color:var(--muted);font-weight:700;font-size:14px;line-height:1.4}
+    .meta{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap}
+    .pill{background:linear-gradient(90deg, rgba(184,134,11,0.1), rgba(184,134,11,0.05));padding:6px 12px;border-radius:20px;font-weight:800;color:var(--gold);font-size:12px}
 
-    /* TESTIMONIALS */
-    .testimonials{max-width:var(--maxw);margin:80px auto;padding:0 24px}
-    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-    .testimonial{background:var(--white);padding:28px;border-radius:16px;box-shadow:0 4px 15px rgba(0,0,0,0.08);border-top:4px solid var(--gold);transition:all .3s}
-    .testimonial:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.12)}
-    .testimonial-rating{color:#ffc107;font-size:14px;margin-bottom:12px;letter-spacing:2px}
-    .testimonial-text{color:var(--muted);font-weight:700;font-size:14px;line-height:1.6;margin-bottom:16px;font-style:italic}
-    .testimonial-author{display:flex;align-items:center;gap:12px}
-    .testimonial-avatar{width:44px;height:44px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-weight:900;font-size:18px}
-    .testimonial-name{font-weight:900;color:var(--black);font-size:14px}
-    .testimonial-title{color:var(--muted);font-size:12px;font-weight:700}
+    .actions{display:flex;gap:10px;margin-top:12px}
+    .btn{flex:1;padding:12px;border-radius:10px;border:0;cursor:pointer;font-weight:900;transition:all .2s;font-size:14px;font-family:inherit}
+    .btn.details{background:transparent;border:2px solid rgba(184,134,11,0.2);color:var(--gold)}
+    .btn.details:hover{background:rgba(184,134,11,0.1);border-color:var(--gold)}
+    .btn.book{background:var(--gold);color:#fff;box-shadow:0 6px 20px rgba(184,134,11,0.25)}
+    .btn.book:hover{background:#aa7a0a;box-shadow:0 8px 30px rgba(184,134,11,0.35)}
 
-    /* CTA */
-    .cta-section{background:linear-gradient(135deg, var(--gold) 0%, #aa7a0a 100%);padding:60px 24px;text-align:center}
-    .cta-content{max-width:600px;margin:0 auto;color:#fff}
-    .cta-content h2{font-size:36px;font-weight:900;margin:0 0 16px}
-    .cta-content p{font-size:16px;font-weight:700;margin:0 0 24px;opacity:.95}
-    .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-    .btn-white{background:#fff;color:var(--gold);padding:14px 32px;border-radius:10px;border:0;cursor:pointer;font-weight:900;transition:all .3s;font-family:inherit;font-size:14px}
-    .btn-white:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.15)}
+    /* empty state */
+    .empty-state{text-align:center;padding:60px 24px;color:var(--muted)}
+    .empty-state h3{font-size:20px;margin-bottom:8px}
 
-    /* FOOTER */
-    footer.site-footer{background:linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);color:#f0f0f0;padding:60px 24px 30px}
+    /* loading */
+    .loading{text-align:center;padding:40px;color:var(--gold)}
+    .loader{border:4px solid rgba(184,134,11,0.2);border-radius:50%;border-top:4px solid var(--gold);width:40px;height:40px;animation:spin 1s linear infinite;margin:0 auto 16px}
+    @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+
+    /* error state */
+    .error-state{background:#ffebee;border:2px solid #d32f2f;border-radius:12px;padding:32px;text-align:center;color:#d32f2f;margin:20px}
+    .error-state h3{font-size:22px;margin:0 0 12px;font-weight:900}
+    .error-state p{margin:0 0 20px;font-weight:700}
+    .error-btn{padding:12px 24px;background:#d32f2f;color:white;border:none;border-radius:8px;cursor:pointer;font-weight:900;transition:all .2s;font-family:inherit}
+    .error-btn:hover{background:#b71c1c}
+
+    /* pagination */
+    .pagination{display:flex;gap:8px;justify-content:center;align-items:center;padding:24px;margin-top:32px;flex-wrap:wrap}
+    .pagination button{padding:10px 14px;border:2px solid rgba(184,134,11,0.2);border-radius:8px;background:#fff;color:var(--gold);cursor:pointer;font-weight:900;transition:all .2s;font-family:inherit}
+    .pagination button:hover:not(:disabled){background:rgba(184,134,11,0.08);border-color:var(--gold)}
+    .pagination button.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+    .pagination button:disabled{opacity:0.5;cursor:not-allowed}
+
+    /* modal */
+    .modal-backdrop{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:2000;background:rgba(0,0,0,0.7);padding:20px;animation:fadeIn .3s}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .modal{width:100%;max-width:600px;border-radius:20px;background:var(--white);padding:32px;box-shadow:0 40px 100px rgba(0,0,0,0.3);position:relative;max-height:90vh;overflow-y:auto;animation:slideUp .3s}
+    @keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .modal h3{color:var(--gold);margin-bottom:4px;font-size:22px}
+    .modal-item-name{font-weight:900;font-size:18px;color:var(--black);margin-bottom:12px;padding-bottom:12px;border-bottom:2px solid rgba(184,134,11,0.1)}
+    .modal-description{color:var(--muted);font-size:14px;margin-bottom:20px;line-height:1.6}
+    .modal .close{position:absolute;right:16px;top:16px;border:0;background:transparent;font-size:28px;cursor:pointer;color:var(--muted);width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:all .2s}
+    .modal .close:hover{color:var(--black);background:rgba(184,134,11,0.08)}
+    .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+    .contact-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px;border-radius:12px;border:0;cursor:pointer;background:#f8f6f1;font-weight:900;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,0.06);transition:all .3s;text-decoration:none;font-family:inherit}
+    .contact-btn:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,0.12);background:var(--gold);color:#fff}
+    .contact-btn:hover .contact-icon{transform:scale(1.1)}
+    .contact-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:24px;color:#fff;flex-shrink:0;transition:transform .3s}
+
+    /* footer */
+    footer.site-footer{background:linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);color:#f0f0f0;padding:60px 24px 30px;margin-top:80px}
     .footer-content{max-width:var(--maxw);margin:0 auto}
     .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px}
-    .footer-col h4{color:var(--gold);font-weight:900;font-size:16px;margin:0 0 16px}
+    .footer-col h4{color:var(--gold);font-weight:900;font-size:16px;margin:0 0 16px;display:flex;align-items:center;gap:8px}
     .footer-col ul{list-style:none;margin:0;padding:0}
-    .footer-col li{margin-bottom:10px;font-weight:700;font-size:13px}
+    .footer-col li{margin-bottom:10px;font-weight:700;font-size:13px;transition:all .2s}
     .footer-col a{color:#ccc;text-decoration:none;transition:color .2s}
     .footer-col a:hover{color:var(--gold)}
+    .footer-col li:hover{transform:translateX(-4px)}
+    .footer-about{line-height:1.8;font-size:13px;color:#bbb}
+    .footer-social{display:flex;gap:12px;margin-top:16px}
+    .social-btn{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(184,134,11,0.15);color:var(--gold);text-decoration:none;font-weight:900;font-size:18px;transition:all .3s}
+    .social-btn:hover{background:var(--gold);color:#fff;transform:translateY(-3px)}
     .footer-divider{height:1px;background:rgba(184,134,11,0.2);margin:32px 0}
     .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:12px;color:#999;font-weight:700}
     .footer-links{display:flex;gap:20px;flex-wrap:wrap}
-    .footer-links a{color:#999;transition:color .2s}
+    .footer-links a{color:#999;text-decoration:none;transition:color .2s}
     .footer-links a:hover{color:var(--gold)}
-
-    /* RESPONSIVE */
     @media(max-width:768px){
-      .hero-slider{height:400px}
-      .slide h1{font-size:32px}
-      .slide p{font-size:16px}
-      .feature-card{padding:16px}
-      .categories-grid{grid-template-columns:1fr}
-      .specials-grid{grid-template-columns:1fr}
-      .testimonials-grid{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr;gap:30px}
       .footer-bottom{flex-direction:column;text-align:center}
       footer.site-footer{padding:40px 24px 20px}
-      .section-title{font-size:28px;margin-bottom:32px}
-      .cta-content h2{font-size:28px}
+    }
+
+    /* responsive */
+    @media(max-width:768px){
+      nav.main-nav button{padding:8px 14px;font-size:13px}
+      nav.main-nav a{padding:8px 12px;font-size:12px}
+      .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+      .header-inner{flex-direction:column;gap:12px;padding:12px}
+      .hero{padding:24px}
+      .hero h1{font-size:24px}
+      .contact-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -159,208 +171,94 @@
           <div class="site-sub">سجافات • كوشات • فساتين</div>
         </div>
       </div>
-      <button class="menu-toggle" id="menuToggleHome" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
-      <div style="display:flex;align-items:center;gap:10px;max-width:420px;width:100%;margin-left:auto;">
-        <input id="homeSearchInput" type="search" placeholder="ابحث عن كرت" style="width:100%;padding:10px 12px;border:2px solid rgba(184,134,11,0.3);border-radius:8px;outline:none;font-weight:700;">
-        <button id="searchBtnHome" style="border:0;background:var(--gold);color:#fff;padding:10px 12px;border-radius:8px;font-weight:900;cursor:pointer;"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="nav-links" id="mainNavHome">
-        <a href="home.html"><i class="fas fa-home"></i> الرئيسية</a>
-        <a href="index.html?category=all"><i class="fas fa-layer-group"></i> المعرض</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
+      <nav class="main-nav" role="navigation" id="mainNav">
+        <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
         <a href="search-code.html"><i class="fas fa-search"></i> بحث بالرمز</a>
-        <a href="index.html?category=all" class="btn-shop"><i class="fas fa-calendar-check"></i> اجر الآن</a>
-      </div>
+        <button class="nav-tab active" data-category="سجاف"><i class="fas fa-spa"></i> السجافات</button>
+        <button class="nav-tab" data-category="كوشة"><i class="fas fa-gopuram"></i> الكوشات</button>
+        <button class="nav-tab" data-category="فساتين"><i class="fas fa-ring"></i> الفساتين</button>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO SLIDER -->
-  <section class="hero-slider">
-    <div class="slide active">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-star"></i> عرض خاص</span>
-        <h1>سجافات مميزة</h1>
-        <p>سجافات خمس نجوم لتأجيرها لأهم مناسباتك بأسعار مناسبة وحدمة مميزة</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=سجاف" class="btn btn-primary">تأجير السجافات</a>
-          <a href="index.html?category=all" class="btn btn-secondary">عرض الكل</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slide">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-sparkles"></i> عرض حصري</span>
-        <h1>كوشات فاخرة</h1>
-        <p>ديكورات احترافية لتأجيرها لالزفاف والحفلات الكبيرة مع خدمة مميزة</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=كوشة" class="btn btn-primary">تأجير الكوشات</a>
-          <a href="index.html?category=all" class="btn btn-secondary">اعرف المزيد</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slide">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-heart"></i> جديد</span>
-        <h1>فساتين رائعة</h1>
-        <p>مجموعة فساتين راقية لتأجيرها للزفاف والسهرات والمناسبات الرسمية</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=فساتين" class="btn btn-primary">تأجير الفساتين</a>
-          <a href="index.html?category=all" class="btn btn-secondary">ابدأ الآن</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider-dots">
-      <div class="dot active" onclick="currentSlide(1)"></div>
-      <div class="dot" onclick="currentSlide(2)"></div>
-      <div class="dot" onclick="currentSlide(3)"></div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>استأجر ما يناسبك</h1>
+    <p>تصاميم فاخرة وحصرية لتأجيرها في أهم مناسباتك</p>
+    <div style="margin-top:18px;max-width:720px;margin-inline:auto;">
+      <input id="searchInput" type="search" placeholder="ابحث عن القالب، اللون، أو الستايل" style="width:100%;padding:12px 14px;border:2px solid rgba(184,134,11,0.3);border-radius:10px;font-size:14px;font-weight:700;outline:none;box-shadow:0 5px 20px rgba(0,0,0,0.05);">
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-truck"></i></span>
-      <h3>التوصيل والتركيب</h3>
-      <p>نوصل منافعك بسرعة والتركيب مجانا بمهارة عالية</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-credit-card"></i></span>
-      <h3>دفع مرن</h3>
-      <p>تسهيلات دفع مرنة وآمنة بجميع طرق الدفع</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-headset"></i></span>
-      <h3>دعم 24/7</h3>
-      <p>فريق دعم متخصص الطلب متاح ظهرب ليلا</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-star"></i></span>
-      <h3>تجربة مميزة</h3>
-      <p>جودة عالية وخدمة مميزة لضمان رضاك الكامل</p>
-    </div>
-  </section>
+  <main class="container">
+    <!-- Filters -->
+    <section class="filters" id="filtersSection">
+      <label class="filter">
+        <input type="radio" name="subFilter" value="all" checked>
+        <label style="margin:0">الكل</label>
+      </label>
+    </section>
 
-  <!-- CATEGORIES -->
-  <section class="categories">
-    <h2 class="section-title"><i class="fas fa-layer-group"></i> فئات التأجير</h2>
-    <div class="categories-grid">
-      <div class="category-card">
-        <img src="img/img/1.jpg" alt="السجافات">
-        <div class="category-overlay">
-          <a href="index.html?category=سجاف" style="text-decoration:none"><div class="category-title"><i class="fas fa-spa"></i> السجافات</div></a>
+    <!-- GRID -->
+    <section id="gallery">
+      <div class="grid" id="cardsGrid">
+        <div class="loading">
+          <div class="loader"></div>
+          <p>جاري تحميل البيانات...</p>
         </div>
       </div>
-      <div class="category-card">
-        <img src="img/img/7.jpg" alt="الكوشات">
-        <div class="category-overlay">
-          <a href="index.html?category=كوشة" style="text-decoration:none"><div class="category-title"><i class="fas fa-gopuram"></i> الكوشات</div></a>
-        </div>
+      <div class="pagination" id="paginationContainer" style="display:none"></div>
+      <div class="empty-state" id="emptyState" style="display:none">
+        <h3>لا توجد منتجات في هذه الفئة</h3>
       </div>
-      <div class="category-card">
-        <img src="img/img/10.jpg" alt="الفساتين">
-        <div class="category-overlay">
-          <a href="index.html?category=فساتي" style="text-decoration:none"><div class="category-title"><i class="fas fa-ring"></i> الفساتين</div></a>
-        </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <button class="close" id="modalClose">✕</button>
+      <h3><i class="fas fa-phone-alt"></i> طرق التأجير والتواصل</h3>
+      <div id="modalItemTitle"></div>
+      <p style="margin:0 0 16px;color:var(--muted);font-size:13px;font-weight:700"><i class="fas fa-arrow-down"></i> اختر الطريقة المناسبة للتواصل معنا والاتفاق على التأجير</p>
+
+      <div class="contact-grid" id="contactGrid">
+        <button class="contact-btn" id="btnWhatsapp">
+          <span class="contact-icon" style="background:#25d366"><i class="fab fa-whatsapp"></i></span>
+          <span>واتساب</span>
+        </button>
+
+        <a class="contact-btn" id="btnFacebook" target="_blank" rel="noopener">
+          <span class="contact-icon" style="background:#1877f2"><i class="fab fa-facebook"></i></span>
+          <span>فيسبوك</span>
+        </a>
+
+        <a class="contact-btn" id="btnInstagram" target="_blank" rel="noopener">
+          <span class="contact-icon" style="background:#e4405f"><i class="fab fa-instagram"></i></span>
+          <span>انستغرام</span>
+        </a>
+
+        <a class="contact-btn" id="btnCall" href="tel:+967766202116">
+          <span class="contact-icon" style="background:#007bff"><i class="fas fa-phone"></i></span>
+          <span>اتصال</span>
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- SPECIALS -->
-  <section class="specials">
-    <div class="specials-content">
-      <div class="specials-header">
-        <h2><i class="fas fa-fire"></i> عروضنا المميزة</h2>
-        <p>تمتع بأفضل أسعار التأجير على منتجاتنا الموسمية</p>
-      </div>
-      <div class="specials-grid">
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-percent"></i></div>
-          <h3>عروض موسميه</h3>
-          <p>تعافيف خاصة على التأجير لدينها والحفلات الجماعية</p>
-          <span class="special-tag">محدود شهري</span>
-        </div>
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-truck-pickup"></i></div>
-          <h3>تركيب مجاني</h3>
-          <p>تركيب مجاني بخبرة لجميع طلبات التأجير بدون تكاليف</p>
-          <span class="special-tag">جاهز</span>
-        </div>
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>ضمان السلامة</h3>
-          <p>ضمان كامل على منافعك وتغطية التلفات والأضرار</p>
-          <span class="special-tag">مضمون 100%</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2 class="section-title">💬 قول عملائنا</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"موني الخيار الأول لحفلتي! سجاف الجودة العالية وسعر مناسب وتسليم سريع جداً"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">ف</div>
-          <div>
-            <div class="testimonial-name">فاطمة أحمد</div>
-            <div class="testimonial-title">عميلة سعيدة</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"الكوشة اللي اشتريتها من موني كانت مثال الاحترافية والجودة مع سعر معقول جداً"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">ع</div>
-          <div>
-            <div class="testimonial-name">علي محمد</div>
-            <div class="testimonial-title">آراء معتمدة</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"الفستان اللي اخذته ما قصرت به موني! ديزاين رائع وخامة ممتازة جداً انصح فيهم"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">د</div>
-          <div>
-            <div class="testimonial-name">ديانا خالد</div>
-            <div class="testimonial-title">عميلة مكررة</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2><i class="fas fa-calendar-alt"></i> هل أنت مستعد للأستاجار</h2>
-      <p>اكتشف مجموعتنا اللريعة من السجافات والكوشات والفساتين بأسعار مناسبة</p>
-      <div class="cta-buttons">
-        <a href="index.html?category=all" class="btn-white"><i class="fas fa-search"></i> استعرض المجموعة</a>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
- <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-grid">
         <div class="footer-col">
           <h4><i class="fas fa-info-circle"></i> عن موني</h4>
           <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/ezaxy.store" class="social-btn" title="فيسبوك" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/ezaxy.store" class="social-btn" title="انستغرام" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/+967766202116" class="social-btn" title="واتساب" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/ezaxy.store" class="social-btn" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ezaxy.store" class="social-btn" title="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+967766202116" class="social-btn" title="واتساب"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -405,65 +303,307 @@
       </div>
     </div>
   </footer>
+
   <script>
-    const menuToggleHome = document.getElementById('menuToggleHome');
-    const mainNavHome = document.getElementById('mainNavHome');
-    if (menuToggleHome && mainNavHome) {
-      menuToggleHome.addEventListener('click', () => mainNavHome.classList.toggle('open'));
-      document.addEventListener('click', e => {
-        if (!mainNavHome.contains(e.target) && !menuToggleHome.contains(e.target)) {
-          mainNavHome.classList.remove('open');
+    const perPage = 8;
+    let currentPage = 1;
+    let currentCategory = 'سجاف';
+    let currentSubFilter = 'all';
+    let items = [];
+    let currentItem = null;
+
+    // قراءة معاملي category و q من URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    const searchParam = urlParams.get('q') || '';
+    let currentSearch = '';
+    if (categoryParam && ['سجاف', 'كوشة', 'فساتين'].includes(categoryParam)) {
+      currentCategory = categoryParam;
+    }
+    currentSearch = searchParam;
+
+    // DOM elements
+    const navTabs = document.querySelectorAll('.nav-tab');
+    const filtersSection = document.getElementById('filtersSection');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const paginationContainer = document.getElementById('paginationContainer');
+    const emptyState = document.getElementById('emptyState');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalClose = document.getElementById('modalClose');
+    const modalItemTitle = document.getElementById('modalItemTitle');
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const btnWhatsapp = document.getElementById('btnWhatsapp');
+    const btnFacebook = document.getElementById('btnFacebook');
+    const btnInstagram = document.getElementById('btnInstagram');
+    const btnCall = document.getElementById('btnCall');
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.value = currentSearch;
+    }
+    function generateCode(item) {
+      if (item.code) return item.code;
+      const idStr = String(item.id).padStart(3, '0');
+      if (item.category === 'سجاف') return `SJ-${idStr}`;
+      if (item.category === 'كوشة') return `KSH-${idStr}`;
+      return `DR-${idStr}`;
+    }
+
+    // Load data with better error handling
+    function loadData() {
+      fetch('./data/sajafat.json')
+        .then(response => {
+          console.log('Response status:', response.status);
+          if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+          return response.json();
+        })
+        .then(json => {
+          console.log('Data loaded successfully:', json.length, 'items');
+          if (!Array.isArray(json) || json.length === 0) {
+            throw new Error('البيانات غير صحيحة أو فارغة');
+          }
+          items = json.map(item => ({ ...item, code: generateCode(item) }));
+          initializeUI();
+        })
+        .catch(err => {
+          console.error('Load error:', err);
+          showError(`خطأ: ${err.message}`);
+        });
+    }
+
+    function showError(message) {
+      cardsGrid.innerHTML = `
+        <div class="error-state">
+          <h3><i class="fas fa-exclamation-triangle"></i> خطأ في التحميل</h3>
+          <p>${message}</p>
+          <button class="error-btn" onclick="location.reload()"><i class="fas fa-sync"></i> إعادة محاولة</button>
+        </div>
+      `;
+    }
+
+    function initializeUI() {
+      // تفعيل الـ nav tab الصحيح
+      navTabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.dataset.category === currentCategory) {
+          tab.classList.add('active');
         }
       });
+      renderTabs();
+      render();
     }
-    const homeSearchInput = document.getElementById('homeSearchInput');
-    const searchBtnHome = document.getElementById('searchBtnHome');
-    if (searchBtnHome && homeSearchInput) {
-      const goSearch = () => {
-        const q = homeSearchInput.value.trim();
-        const url = q ? `index.html?category=all&q=${encodeURIComponent(q)}` : 'index.html?category=all';
-        location.href = url;
-      };
-      searchBtnHome.addEventListener('click', goSearch);
-      homeSearchInput.addEventListener('keydown', e => {
-        if (e.key === 'Enter') goSearch();
+
+    // Handle tab navigation
+    navTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        navTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        currentCategory = tab.dataset.category;
+        currentPage = 1;
+        currentSubFilter = 'all';
+        renderTabs();
+        render();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', e => {
+        currentSearch = e.target.value;
+        currentPage = 1;
+        render();
       });
     }
-    let currentSlideIndex = 0;
-    const autoSlideInterval = 6000;
 
-    function showSlide(n) {
-      const slides = document.querySelectorAll('.slide');
-      const dots = document.querySelectorAll('.dot');
+    function renderTabs() {
+      const categoryItems = items.filter(i => i.category === currentCategory);
+      const types = [...new Set(categoryItems.map(i => i.type))];
       
-      if (n > slides.length) currentSlideIndex = 1;
-      if (n < 1) currentSlideIndex = slides.length;
+      filtersSection.innerHTML = '';
+      const allLabel = document.createElement('label');
+      allLabel.className = 'filter';
+      allLabel.innerHTML = `<input type="radio" name="subFilter" value="all" checked><span style="margin-left:8px;font-weight:700">الكل</span>`;
+      filtersSection.appendChild(allLabel);
       
-      slides.forEach(slide => slide.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
+      types.forEach(type => {
+        const label = document.createElement('label');
+        label.className = 'filter';
+        label.innerHTML = `<input type="radio" name="subFilter" value="${type}"><span style="margin-left:8px;font-weight:700">${type}</span>`;
+        filtersSection.appendChild(label);
+      });
+
+      document.querySelectorAll('input[name="subFilter"]').forEach(radio => {
+        radio.addEventListener('change', e => {
+          currentSubFilter = e.target.value;
+          currentPage = 1;
+          render();
+        });
+      });
+    }
+
+    function getFilteredList() {
+      let list = items.filter(i => i.category === currentCategory);
+      if (currentSubFilter !== 'all') {
+        list = list.filter(i => i.type === currentSubFilter);
+      }
+      const q = currentSearch.trim().toLowerCase();
+      if (q) {
+        list = list.filter(i => {
+          const haystack = `${i.name} ${i.description} ${i.type} ${i.style} ${i.color}`.toLowerCase();
+          return haystack.includes(q);
+        });
+      }
+      return list;
+    }
+
+    function renderPagination(totalPages) {
+      paginationContainer.innerHTML = '';
+      if (totalPages <= 1) {
+        paginationContainer.style.display = 'none';
+        return;
+      }
+
+      paginationContainer.style.display = 'flex';
+
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = '← السابق';
+      prevBtn.disabled = currentPage === 1;
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          render();
+          window.scrollTo({ top: document.getElementById('gallery').offsetTop - 100, behavior: 'smooth' });
+        }
+      });
+      paginationContainer.appendChild(prevBtn);
+
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.textContent = i;
+        if (i === currentPage) pageBtn.classList.add('active');
+        pageBtn.addEventListener('click', () => {
+          currentPage = i;
+          render();
+          window.scrollTo({ top: document.getElementById('gallery').offsetTop - 100, behavior: 'smooth' });
+        });
+        paginationContainer.appendChild(pageBtn);
+      }
+
+      const nextBtn = document.createElement('button');
+      nextBtn.textContent = 'التالي →';
+      nextBtn.disabled = currentPage === totalPages;
+      nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          render();
+          window.scrollTo({ top: document.getElementById('gallery').offsetTop - 100, behavior: 'smooth' });
+        }
+      });
+      paginationContainer.appendChild(nextBtn);
+    }
+
+    function render() {
+      const list = getFilteredList();
+      const total = list.length;
       
-      slides[currentSlideIndex - 1].classList.add('active');
-      dots[currentSlideIndex - 1].classList.add('active');
+      if (total === 0) {
+        cardsGrid.innerHTML = '';
+        paginationContainer.style.display = 'none';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      const totalPages = Math.ceil(total / perPage);
+      const start = (currentPage - 1) * perPage;
+      const pageItems = list.slice(start, start + perPage);
+
+      cardsGrid.innerHTML = '';
+      pageItems.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        const pillColor = item.color === 'ذهبي' ? '#fcd219' : 
+                          item.color === 'أبيض' ? '#f0f0f0' : 
+                          item.color === 'أحمر' ? '#ff4444' : 
+                          item.color === 'ملون' ? '#ff9800' :
+                          '#ccc';
+        card.innerHTML = `
+          <div class="card-media">
+            <span class="card-badge">${item.type}</span>
+            <img src="${item.image}" alt="${item.name}" onerror="this.src='img/img/placeholder.jpg'">
+          </div>
+          <div class="card-body">
+            <div class="title">${item.name}</div>
+            <div class="desc">${item.description}</div>
+            <div class="meta">
+              <span class="pill">${item.style || ''}</span>
+              <span class="pill" style="background:linear-gradient(90deg, ${pillColor}, transparent)">${item.color}</span>
+            </div>
+            <div class="code" style="font-weight:800;font-size:12px;color:#555;margin-top:4px">الرمز: ${item.code}</div>
+            <div class="actions">
+              <a class="btn details" href="details.html?id=${item.id}">المزيد</a>
+              <button class="btn book" data-id="${item.id}">اجّر الآن</button>
+            </div>
+          </div>
+        `;
+        cardsGrid.appendChild(card);
+      });
+
+      document.querySelectorAll('.btn.book').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const id = Number(e.currentTarget.dataset.id);
+          openModal(id);
+        });
+      });
+
+      // زر التفاصيل أصبح رابط مباشر لصفحة التفاصيل
+
+      renderPagination(totalPages);
     }
 
-    function currentSlide(n) {
-      currentSlideIndex = n;
-      showSlide(currentSlideIndex);
+    function openModal(id) {
+      currentItem = items.find(x => x.id === id);
+      if (!currentItem) return;
+      
+      modalItemTitle.innerHTML = `<div class="modal-item-name">${currentItem.name}</div><p class="modal-description">📦 منتج: ${currentItem.type} | 🎨 لون: ${currentItem.color} | 💎 أسلوب: ${currentItem.style}</p>`;
+      btnFacebook.href = currentItem.facebook || 'https://www.facebook.com/ezaxy.store';
+      btnInstagram.href = currentItem.instagram || 'https://www.instagram.com/ezaxy.store';
+      btnCall.href = currentItem.phone ? `tel:${currentItem.phone}` : 'tel:+967766202116';
+      
+      btnWhatsapp.onclick = () => {
+        const text = `مرحباً، أريد استئجار: ${currentItem.name}`;
+        window.open(`https://wa.me/967766202116?text=${encodeURIComponent(text)}`, '_blank');
+      };
+
+      modalBackdrop.style.display = 'flex';
     }
 
-    function nextSlide() {
-      currentSlideIndex++;
-      showSlide(currentSlideIndex);
+    function closeModal() {
+      modalBackdrop.style.display = 'none';
     }
 
-    function autoSlide() {
-      nextSlide();
-      setTimeout(autoSlide, autoSlideInterval);
-    }
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', e => {
+      if (e.target === modalBackdrop) closeModal();
+    });
 
-    // Initialize
-    showSlide(currentSlideIndex = 1);
-    autoSlide();
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+    document.addEventListener('click', e => {
+      if (!mainNav.contains(e.target) && !menuToggle.contains(e.target) && mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+      }
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeModal();
+        mainNav.classList.remove('open');
+      }
+    });
+
+    // Load data on page load
+    loadData();
   </script>
 </body>
 </html>
