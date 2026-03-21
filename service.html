@@ -35,15 +35,15 @@
     /* nav - tabs */
     nav.main-nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap;transition:all .3s;}
     .menu-toggle{display:none;border:none;background:#b8860b;color:#fff;font-size:20px;padding:8px 10px;border-radius:8px;cursor:pointer;margin-left:auto}
-    nav.main-nav button, nav.main-nav a{padding:10px 14px;border:none;border-radius:8px;font-weight:700;background:transparent;color:var(--black);cursor:pointer;transition:all .2s;font-family:inherit;display:inline-flex; align-items:center;gap:8px;}
-    nav.main-nav button:hover, nav.main-nav a:hover{background:rgba(184,134,11,0.08)}
-    nav.main-nav button.active{background:var(--gold);color:#fff}
+    nav.main-nav button, nav.main-nav a{padding:12px 18px;border:none;border-radius:12px;font-weight:700;background:linear-gradient(135deg, #f8f6f1, #fff);color:var(--black);cursor:pointer;transition:all .3s;font-family:inherit;display:inline-flex; align-items:center;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);border:1px solid rgba(184,134,11,0.1);}
+    nav.main-nav button:hover, nav.main-nav a:hover{background:linear-gradient(135deg, var(--gold), #aa7a0a);color:#fff;transform:translateY(-2px);box-shadow:0 4px 16px rgba(184,134,11,0.2);}
+    nav.main-nav button.active{background:linear-gradient(135deg, var(--gold), #aa7a0a);color:#fff;box-shadow:0 4px 16px rgba(184,134,11,0.3);transform:translateY(-1px);}
     nav.main-nav a{font-size:14px;text-decoration:none;}
     @media(max-width:860px){
       .menu-toggle{display:block}
       nav.main-nav{display:none;position:fixed;top:80px;right:12px;left:12px;background:rgba(255,255,255,0.98);border:1px solid rgba(184,134,11,0.2);border-radius:12px;padding:10px;flex-direction:column;gap:8px;box-shadow:0 10px 35px rgba(0,0,0,0.2);z-index:1002;}
       nav.main-nav.open{display:flex}
-      nav.main-nav button, nav.main-nav a{width:100%;justify-content:center;}
+      nav.main-nav button, nav.main-nav a{width:100%;justify-content:center;padding:14px 18px;}
     }
 
     /* hero banner */
@@ -149,8 +149,8 @@
 
     /* responsive */
     @media(max-width:768px){
-      nav.main-nav button{padding:8px 14px;font-size:13px}
-      nav.main-nav a{padding:8px 12px;font-size:12px}
+      nav.main-nav button{padding:10px 16px;font-size:13px}
+      nav.main-nav a{padding:10px 14px;font-size:12px}
       .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
       .header-inner{flex-direction:column;gap:12px;padding:12px}
       .hero{padding:24px}
@@ -257,7 +257,7 @@
           <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/Sejafomhsam" class="social-btn" title="فيسبوك"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/seham_alhomaidi" class="social-btn" title="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn" title="انستغرام"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/+967770075591" class="social-btn" title="واتساب"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
@@ -566,11 +566,11 @@
       
       modalItemTitle.innerHTML = `<div class="modal-item-name">${currentItem.name}</div><p class="modal-description">📦 منتج: ${currentItem.type} | 🎨 لون: ${currentItem.color} | 💎 أسلوب: ${currentItem.style}</p>`;
       btnFacebook.href = currentItem.facebook || 'https://www.facebook.com/Sejafomhsam';
-      btnInstagram.href = currentItem.instagram || 'https://www.instagram.com/seham_alhomaidi'
+      btnInstagram.href = currentItem.instagram || 'https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
       btnCall.href = currentItem.phone ? `tel:${currentItem.phone}` : 'tel:+967770075591';
       
       btnWhatsapp.onclick = () => {
-        const text = `مرحباً، أريد استئجار: ${currentItem.name}`;
+        const text = `مرحباً، أريد استئجار: ${currentItem.name} (الرمز: ${currentItem.code})`;
         window.open(`https://wa.me/967770075591?text=${encodeURIComponent(text)}`, '_blank');
       };
 
