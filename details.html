@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>موني — تأجير السجافات والكوشات والفساتين رمالون</title>
-  <meta name="description" content="موني متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لمناسباتك">
+  <title>تفاصيل المنتج — موني</title>
+  <meta name="description" content="تفاصيل منتج موني للتأجير">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -159,12 +159,8 @@
           <div class="site-sub">سجافات • كوشات • فساتين</div>
         </div>
       </div>
-      <button class="menu-toggle" id="menuToggleHome" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
-      <div style="display:flex;align-items:center;gap:10px;max-width:420px;width:100%;margin-left:auto;">
-        <input id="homeSearchInput" type="search" placeholder="ابحث عن كرت" style="width:100%;padding:10px 12px;border:2px solid rgba(184,134,11,0.3);border-radius:8px;outline:none;font-weight:700;">
-        <button id="searchBtnHome" style="border:0;background:var(--gold);color:#fff;padding:10px 12px;border-radius:8px;font-weight:900;cursor:pointer;"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="nav-links" id="mainNavHome">
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
+      <div class="nav-links" id="mainNav">
         <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
         <a href="service.html"><i class="fas fa-layer-group"></i> المعرض</a>
         <a href="search-code.html"><i class="fas fa-search"></i> بحث بالرمز</a>
@@ -173,179 +169,67 @@
     </div>
   </header>
 
-  <!-- HERO SLIDER -->
-  <section class="hero-slider">
-    <div class="slide active">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-star"></i> عرض خاص</span>
-        <h1>سجافات مميزة</h1>
-        <p>سجافات خمس نجوم لتأجيرها لأهم مناسباتك بأسعار مناسبة وحدمة مميزة</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=سجاف" class="btn btn-primary">تأجير السجافات</a>
-          <a href="index.html?category=all" class="btn btn-secondary">عرض الكل</a>
-        </div>
-      </div>
+  <!-- PRODUCT DETAILS --><section style="max-width:var(--maxw);margin:40px auto;padding:0 24px">
+    <!-- Breadcrumb -->
+    <div style="margin-bottom:24px;font-size:13px;font-weight:700">
+      <a href="index.html" style="color:var(--gold)">الرئيسية</a> / <a href="service.html" style="color:var(--gold)">المعرض</a> / <span id="breadcrumbName">المنتج</span>
     </div>
 
-    <div class="slide">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-sparkles"></i> عرض حصري</span>
-        <h1>كوشات فاخرة</h1>
-        <p>ديكورات احترافية لتأجيرها لالزفاف والحفلات الكبيرة مع خدمة مميزة</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=كوشة" class="btn btn-primary">تأجير الكوشات</a>
-          <a href="index.html?category=all" class="btn btn-secondary">اعرف المزيد</a>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;@media (max-width:768px){grid-template-columns:1fr;gap:24px}">
+      <!-- Product Gallery -->
+      <div>
+        <div id="mainImage" style="width:100%;height:400px;border-radius:16px;overflow:hidden;margin-bottom:16px;background:#f5f5f5;border:2px solid rgba(184,134,11,0.1)">
+          <img id="galleryImage" src="" alt="صورة المنتج" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div id="thumbnails"></div>
         </div>
       </div>
-    </div>
 
-    <div class="slide">
-      <div class="slide-content">
-        <span class="slide-tag"><i class="fas fa-heart"></i> جديد</span>
-        <h1>فساتين رائعة</h1>
-        <p>مجموعة فساتين راقية لتأجيرها للزفاف والسهرات والمناسبات الرسمية</p>
-        <div class="slide-buttons">
-          <a href="index.html?category=فساتين" class="btn btn-primary">تأجير الفساتين</a>
-          <a href="index.html?category=all" class="btn btn-secondary">ابدأ الآن</a>
+      <!-- Product Info -->
+      <div>
+        <div style="margin-bottom:24px">
+          <span id="categoryLabel" style="display:inline-block;background:var(--gold);color:#fff;padding:6px 12px;border-radius:20px;font-weight:900;font-size:11px;margin-bottom:16px"></span>
+          <h1 id="productName" style="font-size:32px;font-weight:900;color:var(--gold);margin:0 0 8px">اسم المنتج</h1>
+          <p id="productType" style="color:var(--muted);font-weight:700;margin:0;font-size:14px">نوع المنتج</p>
         </div>
-      </div>
-    </div>
 
-    <div class="slider-dots">
-      <div class="dot active" onclick="currentSlide(1)"></div>
-      <div class="dot" onclick="currentSlide(2)"></div>
-      <div class="dot" onclick="currentSlide(3)"></div>
-    </div>
-  </section>
+        <!-- Features -->
+        <div style="background:#f9f9f9;padding:20px;border-radius:12px;margin-bottom:24px">
+          <h3 style="color:var(--gold);font-weight:900;margin:0 0 16px;font-size:16px">المميزات</h3>
+          <ul id="featuresList" style="margin:0;padding-right:20px;list-style:none">
+            <li style="padding:8px 0;color:var(--muted);font-weight:700;font-size:13px"><i class="fas fa-check" style="color:var(--gold);margin-left:8px"></i></li>
+          </ul>
+        </div>
 
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-truck"></i></span>
-      <h3>التوصيل والتركيب</h3>
-      <p>نوصل منافعك بسرعة والتركيب مجانا بمهارة عالية</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-credit-card"></i></span>
-      <h3>دفع مرن</h3>
-      <p>تسهيلات دفع مرنة وآمنة بجميع طرق الدفع</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-headset"></i></span>
-      <h3>دعم 24/7</h3>
-      <p>فريق دعم متخصص الطلب متاح ظهرب ليلا</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon"><i class="fas fa-star"></i></span>
-      <h3>تجربة مميزة</h3>
-      <p>جودة عالية وخدمة مميزة لضمان رضاك الكامل</p>
-    </div>
-  </section>
+        <!-- Description -->
+        <div style="margin-bottom:24px">
+          <h3 style="color:var(--gold);font-weight:900;margin:0 0 12px;font-size:16px">الوصف</h3>
+          <p id="productDesc" style="color:var(--muted);font-weight:700;font-size:14px;line-height:1.6;margin:0">
+            الوصف سيتم تحديثه من البيانات
+          </p>
+        </div>
 
-  <!-- CATEGORIES -->
-  <section class="categories">
-    <h2 class="section-title"><i class="fas fa-layer-group"></i> فئات التأجير</h2>
-    <div class="categories-grid">
-      <div class="category-card">
-        <img src="img/img/1.jpg" alt="السجافات">
-        <div class="category-overlay">
-          <a href="index.html?category=سجاف" style="text-decoration:none"><div class="category-title"><i class="fas fa-spa"></i> السجافات</div></a>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="img/img/7.jpg" alt="الكوشات">
-        <div class="category-overlay">
-          <a href="index.html?category=كوشة" style="text-decoration:none"><div class="category-title"><i class="fas fa-gopuram"></i> الكوشات</div></a>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="img/img/10.jpg" alt="الفساتين">
-        <div class="category-overlay">
-          <a href="index.html?category=فساتي" style="text-decoration:none"><div class="category-title"><i class="fas fa-ring"></i> الفساتين</div></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECIALS -->
-  <section class="specials">
-    <div class="specials-content">
-      <div class="specials-header">
-        <h2><i class="fas fa-fire"></i> عروضنا المميزة</h2>
-        <p>تمتع بأفضل أسعار التأجير على منتجاتنا الموسمية</p>
-      </div>
-      <div class="specials-grid">
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-percent"></i></div>
-          <h3>عروض موسميه</h3>
-          <p>تعافيف خاصة على التأجير لدينها والحفلات الجماعية</p>
-          <span class="special-tag">محدود شهري</span>
-        </div>
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-truck-pickup"></i></div>
-          <h3>تركيب مجاني</h3>
-          <p>تركيب مجاني بخبرة لجميع طلبات التأجير بدون تكاليف</p>
-          <span class="special-tag">جاهز</span>
-        </div>
-        <div class="special-item">
-          <div class="special-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>ضمان السلامة</h3>
-          <p>ضمان كامل على منافعك وتغطية التلفات والأضرار</p>
-          <span class="special-tag">مضمون 100%</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2 class="section-title">💬 قول عملائنا</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"موني الخيار الأول لحفلتي! سجاف الجودة العالية وسعر مناسب وتسليم سريع جداً"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">ف</div>
-          <div>
-            <div class="testimonial-name">فاطمة أحمد</div>
-            <div class="testimonial-title">عميلة سعيدة</div>
+        <!-- Contact Panel -->
+        <div style="background:linear-gradient(135deg,rgba(184,134,11,0.1),rgba(184,134,11,0.05));padding:20px;border-radius:12px;border:2px solid var(--gold)">
+          <h4 style="color:var(--gold);font-weight:900;margin:0 0 16px;font-size:14px"><i class="fas fa-headset"></i> متصل بنا</h4>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <a href="tel:+967770075591" style="display:flex;align-items:center;gap:12px;padding:10px;background:#fff;border-radius:8px;color:var(--black);font-weight:900;transition:all .2s;text-decoration:none">
+              <i class="fas fa-phone" style="font-size:16px;color:var(--gold)"></i> اتصل بنا
+            </a>
+            <a id="whatsappBtn" href="#" style="display:flex;align-items:center;gap:12px;padding:10px;background:#fff;border-radius:8px;color:var(--black);font-weight:900;transition:all .2s;text-decoration:none">
+              <i class="fab fa-whatsapp" style="font-size:16px;color:#25d366"></i> رسالة عبر واتس
+            </a>
+            <a href="https://www.facebook.com/Sejafomhsam" target="_blank" style="display:flex;align-items:center;gap:12px;padding:10px;background:#fff;border-radius:8px;color:var(--black);font-weight:900;transition:all .2s;text-decoration:none">
+              <i class="fab fa-facebook" style="font-size:16px;color:#1877f2"></i> فيسبوك
+            </a>
           </div>
         </div>
-      </div>
 
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"الكوشة اللي اشتريتها من موني كانت مثال الاحترافية والجودة مع سعر معقول جداً"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">ع</div>
-          <div>
-            <div class="testimonial-name">علي محمد</div>
-            <div class="testimonial-title">آراء معتمدة</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
-        <p class="testimonial-text">"الفستان اللي اخذته ما قصرت به موني! ديزاين رائع وخامة ممتازة جداً انصح فيهم"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">د</div>
-          <div>
-            <div class="testimonial-name">ديانا خالد</div>
-            <div class="testimonial-title">عميلة مكررة</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2><i class="fas fa-calendar-alt"></i> هل أنت مستعد للأستاجار</h2>
-      <p>اكتشف مجموعتنا اللريعة من السجافات والكوشات والفساتين بأسعار مناسبة</p>
-      <div class="cta-buttons">
-        <a href="index.html?category=all" class="btn-white"><i class="fas fa-search"></i> استعرض المجموعة</a>
+        <!-- Rent Button -->
+        <button id="rentBtn" onclick="rentNow()" style="width:100%;margin-top:20px;padding:16px;background:var(--gold);color:#fff;border:0;border-radius:10px;font-weight:900;font-size:16px;cursor:pointer;transition:all .3s;font-family:inherit">
+          <i class="fas fa-calendar-check"></i> حجز الآن
+        </button>
       </div>
     </div>
   </section>
@@ -387,7 +271,6 @@
           <ul>
             <li><i class="fas fa-mobile-alt"></i> <a href="tel:+967770075591">+967770075591</a></li>
             <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+967770075591">رسالة عبر WhatsApp</a></li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:info@ezaxy.store">info@ezaxy.store</a></li>
             <li><i class="fas fa-map-marker-alt"></i> صنعاء - بيت معياد - امام الذوق الايطالي للاحذيه </li>
           </ul>
         </div>
@@ -406,64 +289,109 @@
     </div>
   </footer>
   <script>
-    const menuToggleHome = document.getElementById('menuToggleHome');
-    const mainNavHome = document.getElementById('mainNavHome');
-    if (menuToggleHome && mainNavHome) {
-      menuToggleHome.addEventListener('click', () => mainNavHome.classList.toggle('open'));
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
       document.addEventListener('click', e => {
-        if (!mainNavHome.contains(e.target) && !menuToggleHome.contains(e.target)) {
-          mainNavHome.classList.remove('open');
+        if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
+          mainNav.classList.remove('open');
         }
       });
     }
-    const homeSearchInput = document.getElementById('homeSearchInput');
-    const searchBtnHome = document.getElementById('searchBtnHome');
-    if (searchBtnHome && homeSearchInput) {
-      const goSearch = () => {
-        const q = homeSearchInput.value.trim();
-        const url = q ? `index.html?category=all&q=${encodeURIComponent(q)}` : 'index.html?category=all';
-        location.href = url;
-      };
-      searchBtnHome.addEventListener('click', goSearch);
-      homeSearchInput.addEventListener('keydown', e => {
-        if (e.key === 'Enter') goSearch();
+
+    let currentProduct = null;
+
+    // Get product ID from URL
+    function getProductId() {
+      const params = new URLSearchParams(location.search);
+      return params.get('id');
+    }
+
+    // Load product from JSON
+    async function loadProduct() {
+      const productId = getProductId();
+      if (!productId) {
+        document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#999"><h2>المنتج غير موجود</h2></div>';
+        return;
+      }
+
+      try {
+        const response = await fetch('data/sajafat.json');
+        const products = await response.json();
+        currentProduct = products.find(p => p.id == productId);
+
+        if (!currentProduct) {
+          document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#999"><h2>المنتج غير موجود</h2></div>';
+          return;
+        }
+
+        displayProduct();
+      } catch (error) {
+        console.error('خطأ في تحميل البيانات:', error);
+        alert('حدث خطأ في تحميل البيانات');
+      }
+    }
+
+    // Display product
+    function displayProduct() {
+      // Breadcrumb
+      document.getElementById('breadcrumbName').textContent = currentProduct.name;
+
+      // Main info
+      document.getElementById('productName').textContent = currentProduct.name;
+      document.getElementById('categoryLabel').textContent = currentProduct.category;
+      document.getElementById('productType').textContent = `${currentProduct.type} - الرمز: #${currentProduct.id}`;
+      document.getElementById('productDesc').textContent = currentProduct.description || 'منتج فاخر متميز';
+
+      // Main image
+      const mainImage = document.getElementById('galleryImage');
+      mainImage.src = currentProduct.image;
+
+      // Thumbnails gallery
+      const thumbContainer = document.getElementById('thumbnails');
+      thumbContainer.innerHTML = '';
+      
+      const gallery = currentProduct.gallery || [currentProduct.image];
+      gallery.forEach((img, idx) => {
+        const thumb = document.createElement('img');
+        thumb.src = img;
+        thumb.style.cssText = `width:100%;height:120px;border-radius:8px;cursor:pointer;border:2px solid ${idx === 0 ? 'var(--gold)' : 'transparent'};transition:all .2s`;
+        thumb.onclick = () => {
+          mainImage.src = img;
+          document.querySelectorAll('#thumbnails img').forEach(t => t.style.borderColor = 'transparent');
+          thumb.style.borderColor = 'var(--gold)';
+        };
+        thumbContainer.appendChild(thumb);
       });
-    }
-    let currentSlideIndex = 0;
-    const autoSlideInterval = 6000;
 
-    function showSlide(n) {
-      const slides = document.querySelectorAll('.slide');
-      const dots = document.querySelectorAll('.dot');
-      
-      if (n > slides.length) currentSlideIndex = 1;
-      if (n < 1) currentSlideIndex = slides.length;
-      
-      slides.forEach(slide => slide.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
-      
-      slides[currentSlideIndex - 1].classList.add('active');
-      dots[currentSlideIndex - 1].classList.add('active');
-    }
+      // Features
+      const featuresList = document.getElementById('featuresList');
+      featuresList.innerHTML = '';
+      const features = currentProduct.features || ['منتج فاخر', 'جودة عالية', 'تأجير ميسّر'];
+      features.forEach(feature => {
+        const li = document.createElement('li');
+        li.style.cssText = 'padding:8px 0;color:var(--muted);font-weight:700;font-size:13px';
+        li.innerHTML = `<i class="fas fa-check" style="color:var(--gold);margin-left:8px"></i>${feature}`;
+        featuresList.appendChild(li);
+      });
 
-    function currentSlide(n) {
-      currentSlideIndex = n;
-      showSlide(currentSlideIndex);
+      // WhatsApp button
+      const whatsappBtn = document.getElementById('whatsappBtn');
+      const msg = `السلام عليكم، أريد استئجار: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+      whatsappBtn.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
     }
 
-    function nextSlide() {
-      currentSlideIndex++;
-      showSlide(currentSlideIndex);
-    }
+    // Rent button
+    window.rentNow = function() {
+      if (currentProduct) {
+        const msg = `أريد استئجار: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+        window.location.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
+      }
+    };
 
-    function autoSlide() {
-      nextSlide();
-      setTimeout(autoSlide, autoSlideInterval);
-    }
-
-    // Initialize
-    showSlide(currentSlideIndex = 1);
-    autoSlide();
+    // Load on page ready
+    loadProduct();
   </script>
 </body>
 </html>
