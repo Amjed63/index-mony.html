@@ -162,6 +162,83 @@
     "email": "info@ezaxy.store"
   },
   {
+    "id": 21,
+    "name": "كوشة جديدة مميزة",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D",
+    "description": "كوشة لافتة بتصميم عصري وصورة جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة قوية",
+      "تركيب سريع"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "حديث",
+    "color": "ذهبي",
+    "email": "info@ezaxy.store"
+  },
+   {
+    "id": 21,
+    "name": "كوشة صور 1",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
+    "description": "كوشة من الصور المرسلة 1.",
+    "features": ["تصميم عصري","تفاصيل دقيقة","خامة ممتازة"],
+    "gallery": [
+      "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486471086_2106174749807265_1430112388184789482_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dWCCGbdhq0MQ7kNvwHGlLMB&_nc_oc=Adq9b2TKBUuUVMxOYTT9-55hOISU3BgGq3aIG1kb1JHgv_tD0PGqHR9E5qXCd755wa4&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=wX693LGgpcUXTb90Hk_yLg&_nc_ss=7a30f&oh=00_AfxypWowJVdBt2Ku8aoWcsTly0sgKU75FemQjmlk7LmulQ&oe=69C46AD4"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "صنعاني",
+    "color": "ذهبي",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 22,
+    "name": "كوشة صورة 2",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15",
+    "description": "كوشة من الصور المرسلة 2.",
+    "features": ["ألوان جذابة","تصميم أنيق","خفة وزن"],
+    "gallery": [
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "صنعاني",
+    "color": "أبيض",
+    "email": "info@ezaxy.store"
+  },
+  {
+    "id": 23,
+    "name": "كوشة صورة 3",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907",
+    "description": "كوشة من الصور المرسلة 3.",
+    "features": ["تفاصيل رائعة","إضاءة جميلة","خامة جيدة"],
+    "gallery": [
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907"
+    ],
+    "facebook": "https://www.facebook.com/ezaxy.store",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أزرق",
+    "email": "info@ezaxy.store"
+  },
+  {
     "id": 8,
     "name": "كوشة عصرية",
     "category": "كوشة",
