@@ -53,12 +53,12 @@
     
     /* search suggestions */
     .search-wrapper{position:relative;max-width:720px;margin:18px auto 0;display:block}
-    .search-suggestions{position:absolute;top:100%;left:0;right:0;background:#fff;border:2px solid rgba(184,134,11,0.2);border-top:none;border-radius:0 0 10px 10px;max-height:320px;overflow-y:auto;display:none;z-index:999;box-shadow:0 10px 25px rgba(0,0,0,0.1)}
-    .search-suggestions.active{display:block}
-    .suggestion-item{padding:12px 14px;cursor:pointer;border-bottom:1px solid rgba(184,134,11,0.1);font-weight:700;color:var(--black);transition:all .2s;font-size:14px;display:flex;align-items:center;gap:8px}
+    .search-suggestions{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid rgba(184,134,11,0.2);border-top:none;border-radius:0 0 8px 8px;max-height:0;overflow:hidden;transition:max-height 0.3s;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .search-suggestions.active{max-height:300px;overflow-y:auto}
+    .suggestion-item{padding:10px 12px;cursor:pointer;border-bottom:1px solid rgba(184,134,11,0.1);font-weight:700;color:var(--black);font-size:13px;transition:background 0.2s;display:flex;align-items:center;gap:8px}
     .suggestion-item:last-child{border-bottom:none}
-    .suggestion-item:hover{background:rgba(184,134,11,0.08);color:var(--gold)}
-    .suggestion-item .suggestion-icon{color:var(--gold);font-size:12px}
+    .suggestion-item:hover{background:rgba(184,134,11,0.08)}
+    .suggestion-item .suggestion-icon{font-size:16px;width:24px}
     .suggestion-highlight{color:var(--gold);font-weight:900}
 
     /* container */
@@ -178,7 +178,7 @@
       /* تحسين الـ nav على الهاتف */
       nav.main-nav{position:fixed;top:70px;right:0;left:0;background:rgba(255,255,255,0.99);border:1px solid rgba(184,134,11,0.2);border-radius:8px;padding:8px;flex-direction:column;gap:6px;box-shadow:0 8px 30px rgba(0,0,0,0.15);max-height:none}
       nav.main-nav button, nav.main-nav a{font-size:13px;padding:10px 12px;width:100%;justify-content:flex-start}
-    }
+    } 
     
     @media(max-width:600px){
       .header-inner{padding:10px 8px}
@@ -326,7 +326,7 @@
           <ul>
             <li><i class="fas fa-mobile-alt"></i> <a href="tel:+967770075591">+967770075591</a></li>
             <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+967770075591">رسالة عبر WhatsApp</a></li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:info@ezaxy.store">info@ezaxy.store</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:omhsam999@gmail.com">omhsam999@gmail.com</a></li>
             <li><i class="fas fa-map-marker-alt"></i> صنعاء - بيت معياد - امام الذوق الايطالي للاحذيه </li>
           </ul>
         </div>
@@ -452,7 +452,10 @@
       searchInput.addEventListener('input', e => {
         currentSearch = e.target.value;
         currentPage = 1;
+        currentSubFilter = 'all';
         updateSuggestions();
+        const filteredList = getFilteredListForTabs();
+        renderTabs(filteredList);
         render();
       });
       
@@ -460,9 +463,10 @@
         if (e.key === 'Enter') {
           e.preventDefault();
           document.getElementById('searchSuggestions').classList.remove('active');
-          searchInput.value = '';
-          currentSearch = '';
           currentPage = 1;
+          currentSubFilter = 'all';
+          const filteredList = getFilteredListForTabs();
+          renderTabs(filteredList);
           render();
         }
       });
@@ -480,9 +484,9 @@
       });
     }
 
-    function renderTabs() {
-      const categoryItems = items.filter(i => i.category === currentCategory);
-      const types = [...new Set(categoryItems.map(i => i.type))];
+    function renderTabs(filteredForDisplay = null) {
+      let itemsToRender = filteredForDisplay || items.filter(i => i.category === currentCategory);
+      const types = [...new Set(itemsToRender.map(i => i.type))];
       
       filtersSection.innerHTML = '';
       const allLabel = document.createElement('label');
@@ -508,6 +512,7 @@
 
     function updateSuggestions() {
       const query = currentSearch.trim().toLowerCase();
+      const normalizedQuery = normalizeSearchQuery(query);
       const suggestionsContainer = document.getElementById('searchSuggestions');
       
       if (!query) {
@@ -520,23 +525,23 @@
       // البحث على جميع الفئات والخصائص
       // البحث الأساسي على اسم المنتج أولاً
       const exactMatches = items.filter(i => 
-        i.name.toLowerCase().includes(query)
+        i.name.toLowerCase().includes(normalizedQuery)
       );
       
       // ثم البحث على الفئة (البحث عن كوشة، سجاف، فستان، إلخ)
       const categoryMatches = items.filter(i => 
-        !i.name.toLowerCase().includes(query) &&
-        i.category.toLowerCase().includes(query)
+        !i.name.toLowerCase().includes(normalizedQuery) &&
+        i.category.toLowerCase().includes(normalizedQuery)
       );
       
       // ثم البحث على الوصف والخصائص الأخرى (اللون، الأسلوب، النوع)
       const partialMatches = items.filter(i => 
-        !i.name.toLowerCase().includes(query) && 
-        !i.category.toLowerCase().includes(query) &&
-        (i.description.toLowerCase().includes(query) || 
-         (i.type && i.type.toLowerCase().includes(query)) ||
-         (i.style && i.style.toLowerCase().includes(query)) ||
-         (i.color && i.color.toLowerCase().includes(query)))
+        !i.name.toLowerCase().includes(normalizedQuery) && 
+        !i.category.toLowerCase().includes(normalizedQuery) &&
+        (i.description.toLowerCase().includes(normalizedQuery) || 
+         (i.type && i.type.toLowerCase().includes(normalizedQuery)) ||
+         (i.style && i.style.toLowerCase().includes(normalizedQuery)) ||
+         (i.color && i.color.toLowerCase().includes(normalizedQuery)))
       );
       
       suggestions = [...exactMatches, ...categoryMatches, ...partialMatches].slice(0, 8);
@@ -550,11 +555,11 @@
       suggestionsContainer.innerHTML = suggestions.map(item => {
         const name = item.name;
         const categoryBadge = item.category === 'سجاف' ? '🧵' : item.category === 'كوشة' ? '👑' : '👗';
-        const highlightStart = name.toLowerCase().indexOf(query);
+        const highlightStart = name.toLowerCase().indexOf(normalizedQuery);
         const highlightedName = highlightStart !== -1 
           ? name.slice(0, highlightStart) + 
-            `<span class="suggestion-highlight">${name.slice(highlightStart, highlightStart + query.length)}</span>` +
-            name.slice(highlightStart + query.length)
+            `<span class="suggestion-highlight">${name.slice(highlightStart, highlightStart + normalizedQuery.length)}</span>` +
+            name.slice(highlightStart + normalizedQuery.length)
           : name;
         
         return `<div class="suggestion-item" data-name="${item.name}" data-category="${item.category}">
@@ -581,7 +586,8 @@
                 tab.classList.add('active');
               }
             });
-            renderTabs();
+            const filteredList = getFilteredListForTabs();
+            renderTabs(filteredList);
           }
           
           currentPage = 1;
@@ -594,8 +600,51 @@
       });
     }
 
+    // دالة تطبيع البحث لتحويل الصيغ المختلفة إلى صيغة موحدة
+    function normalizeSearchQuery(query) {
+      // خريطة الصيغ المختلفة للكلمة الواحدة
+      const aliases = {
+        // الكوشات
+        'كوش': 'كوشة',
+        'كوشه': 'كوشة',
+        'كوشة': 'كوشة',
+        // الفساتين
+        'فستان': 'فساتين',
+        'فساتين': 'فساتين',
+        // السجافات
+        'سجاف': 'سجافات',
+        'سجافات': 'سجافات'
+      };
+      
+      // البحث عن التطابق ومعالجة الكلمات
+      let normalized = query;
+      Object.keys(aliases).forEach(key => {
+        // استبدال الكلمة بمتغيراتها بحيث يتم البحث عن أي صيغة
+        const regex = new RegExp(`\\b${key}\\b`, 'gi');
+        normalized = normalized.replace(regex, aliases[key]);
+      });
+      return normalized;
+    }
+
+    function getFilteredListForTabs() {
+      const q = normalizeSearchQuery(currentSearch.trim()).toLowerCase();
+      let list = items;
+      
+      if (!q) {
+        // إذا لم يوجد بحث، استخدم الفئة الحالية فقط
+        list = items.filter(i => i.category === currentCategory);
+      } else {
+        // عند البحث، ابحث في جميع الفئات
+        list = list.filter(i => {
+          const searchableText = `${i.name} ${i.category} ${i.description} ${i.type} ${i.style || ''} ${i.color || ''}`.toLowerCase();
+          return searchableText.includes(q);
+        });
+      }
+      return list;
+    }
+
     function getFilteredList() {
-      const q = currentSearch.trim().toLowerCase();
+      const q = normalizeSearchQuery(currentSearch.trim()).toLowerCase();
       let list = items;
       
       // عند البحث: البحث في جميع الفئات، وليس فقط الفئة الحالية
@@ -612,6 +661,11 @@
           const searchableText = `${i.name} ${i.category} ${i.description} ${i.type} ${i.style || ''} ${i.color || ''}`.toLowerCase();
           return searchableText.includes(q);
         });
+        
+        // تطبيق الفلتر الفرعي إذا كان محدداً
+        if (currentSubFilter !== 'all') {
+          list = list.filter(i => i.type === currentSubFilter);
+        }
         
         // ترتيب النتائج: البحث في الاسم أولاً ثم في الفئة ثم في الخصائص الأخرى
         const nameMatches = list.filter(i => i.name.toLowerCase().includes(q));
@@ -693,6 +747,8 @@
         card.className = 'card';
         const pillColor = item.color === 'ذهبي' ? '#fcd219' : 
                           item.color === 'أبيض' ? '#f0f0f0' : 
+                          item.color === 'سكري + سماوي' ? '#79d9ff' : 
+                          item.color === 'أحمر' ? '#ff4444' : 
                           item.color === 'أحمر' ? '#ff4444' : 
                           item.color === 'ملون' ? '#ff9800' :
                           '#ccc';
