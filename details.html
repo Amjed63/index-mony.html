@@ -172,15 +172,30 @@
       .cta-content h2{font-size:28px}
 
       /* Product Details Mobile */
-      .product-details{padding:0 16px;margin:20px auto}
-      .product-grid{grid-template-columns:1fr;gap:24px}
-      .product-gallery .main-image{height:300px}
-      .product-gallery .thumbnails{grid-template-columns:repeat(3,1fr);gap:8px}
-      .product-gallery .thumbnails img{height:80px}
-      .product-info h1{font-size:24px}
-      .product-info .features{padding:16px}
-      .product-info .contact-panel{padding:16px}
-      .product-info .rent-btn{padding:14px;font-size:14px}
+      .product-details{width:100%;max-width:100%;padding:18px 12px;margin:16px auto;}
+      .product-grid{grid-template-columns:1fr;gap:18px;}
+      .product-gallery{width:100%;}
+      .product-gallery .main-image{height:220px;}
+      .product-gallery .thumbnails{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;}
+      .product-gallery .thumbnails img{height:56px;}
+      .product-info{width:100%;}
+      .product-info h1{font-size:20px;line-height:1.2;margin-bottom:8px;}
+      .product-info .product-type{font-size:13px;}
+      .product-info .features{padding:12px;}
+      .product-info .features h3{font-size:15px;}
+      .product-info .description p{font-size:13px;}
+      .product-info .contact-panel{padding:12px;}
+      .product-info .contact-panel a{font-size:13px;padding:9px;}
+      .product-info .rent-btn{padding:12px;font-size:14px;}
+      .nav-links{flex-direction:column;align-items:stretch;padding:0;}
+      .nav-links a{font-size:13px;}
+      .nav-links .btn-shop{width:100%;text-align:center;}
+      .header-inner{padding:12px 10px;}
+      .site-title{font-size:16px;}
+      .site-sub{font-size:10px;}
+      .menu-toggle{padding:8px 10px;font-size:18px;}
+      /* ضمان ان الصورة لا تتجاوز المنطقة */
+      img{max-width:100%;height:auto;}
     }
   </style>
 </head>
