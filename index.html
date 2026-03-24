@@ -143,7 +143,64 @@
       footer.site-footer{padding:40px 24px 20px}
       .section-title{font-size:28px;margin-bottom:32px}
       .cta-content h2{font-size:28px}
+      
+      /* تحسين Header */
+      .header-inner{flex-direction:column;gap:8px;padding:10px}
+      .brand{width:100%}
+      .menu-toggle{order:2;position:absolute;left:12px;top:10px}
+      .nav-links{width:100%;flex-direction:column !important;gap:8px;padding:8px 0;background:#fff;margin-top:0}
+      .nav-links.open{display:flex}
+      .nav-links a{width:100%;text-align:center;padding:8px;font-size:13px}
+      
+      /* تحسين البحث */
+      div[style*="display:flex;align-items:center;gap:10px"]{
+        width:100%;
+        flex-direction:column;
+        gap:8px;
+        padding:0;
+        margin: 8px 0 0 0 !important;
+      }
+      #homeSearchInput{width:100% !important;font-size:14px;padding:8px !important;margin:0 !important}
+      #searchBtnHome{width:100%;padding:8px !important;font-size:13px}
     }
+    
+    @media(max-width:600px){
+      .hero-slider{height:300px}
+      .slide h1{font-size:24px}
+      .slide p{font-size:14px}
+      .slide-tag{font-size:10px}
+      .slide-buttons{gap:8px}
+      .btn{padding:10px 16px;font-size:12px}
+      
+      /* Header mobile أكثر تحسين */
+      .header-inner{padding:8px}
+      .brand{gap:8px}
+      .logo{width:40px;height:40px}
+      .site-title{font-size:14px}
+      .site-sub{font-size:9px}
+      .menu-toggle{padding:6px 8px;font-size:16px}
+      
+      /* البحث على mobile */
+      div[style*="display:flex;align-items:center;gap:10px"]{
+        width:100%;
+      }
+      #homeSearchInput{padding:10px 10px !important;font-size:13px}
+      #searchBtnHome{padding:10px 8px !important;font-size:12px}
+      
+      .feature-card{padding:12px}
+      .feature-card h3{font-size:14px}
+      .feature-card p{font-size:12px}
+      .section-title{font-size:20px;margin-bottom:20px}
+      .cta-content h2{font-size:20px}
+      .cta-content p{font-size:14px}
+      .btn-white{padding:10px 20px;font-size:12px}
+    }
+    .search-suggestions-home{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid rgba(184,134,11,0.2);border-top:none;border-radius:0 0 8px 8px;max-height:0;overflow:hidden;transition:max-height 0.3s;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .search-suggestions-home.active{max-height:300px;overflow-y:auto}
+    .suggestion-item-home{padding:10px 12px;cursor:pointer;border-bottom:1px solid rgba(184,134,11,0.1);font-weight:700;color:var(--black);font-size:13px;transition:background 0.2s;display:flex;align-items:center;gap:8px}
+    .suggestion-item-home:hover{background:rgba(184,134,11,0.08)}
+    .suggestion-icon-home{font-size:16px;width:24px}
+    .suggestion-highlight{color:var(--gold);font-weight:900}
   </style>
 </head>
 <body>
@@ -159,8 +216,8 @@
         </div>
       </div>
       <button class="menu-toggle" id="menuToggleHome" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
-      <div style="display:flex;align-items:center;gap:10px;max-width:420px;width:100%;margin-left:auto;">
-        <input id="homeSearchInput" type="search" placeholder="ابحث عن كرت" style="width:100%;padding:10px 12px;border:2px solid rgba(184,134,11,0.3);border-radius:8px;outline:none;font-weight:700;">
+      <div style="display:flex;align-items:center;gap:10px;max-width:420px;width:100%;margin-left:auto;position:relative;">
+        <div class="search-wrapper-home" style="flex:1;position:relative"><input id="homeSearchInput" type="search" placeholder="ابحث عن كرت" style="width:100%;padding:10px 12px;border:2px solid rgba(184,134,11,0.3);border-radius:8px;outline:none;font-weight:700;" autocomplete="off"><div class="search-suggestions-home" id="searchSuggestionsHome"></div></div>
         <button id="searchBtnHome" style="border:0;background:var(--gold);color:#fff;padding:10px 12px;border-radius:8px;font-weight:900;cursor:pointer;"><i class="fas fa-search"></i></button>
       </div>
       <div class="nav-links" id="mainNavHome">
@@ -386,6 +443,7 @@
           <ul>
             <li><i class="fas fa-mobile-alt"></i> <a href="tel:+967770075591">+967770075591</a></li>
             <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+967770075591">رسالة عبر WhatsApp</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@ezaxy.store">info@ezaxy.store</a></li>
             <li><i class="fas fa-map-marker-alt"></i> صنعاء - بيت معياد - امام الذوق الايطالي للاحذيه </li>
           </ul>
         </div>
@@ -414,19 +472,77 @@
         }
       });
     }
+    let itemsHome = [];
     const homeSearchInput = document.getElementById('homeSearchInput');
     const searchBtnHome = document.getElementById('searchBtnHome');
-    if (searchBtnHome && homeSearchInput) {
-      const goSearch = () => {
-        const q = homeSearchInput.value.trim();
-        const url = q ? `index.html?category=all&q=${encodeURIComponent(q)}` : 'index.html?category=all';
-        location.href = url;
-      };
-      searchBtnHome.addEventListener('click', goSearch);
-      homeSearchInput.addEventListener('keydown', e => {
-        if (e.key === 'Enter') goSearch();
-      });
+    const suggestionsHome = document.getElementById('searchSuggestionsHome');
+    
+    async function initSearchHome() {
+      try {
+        const response = await fetch('./data/sajafat.json');
+        if (response.ok) {
+          itemsHome = await response.json();
+        }
+      } catch (error) {
+        console.error('Error loading data:', error);
+        return;
+      }
+      
+      if (searchBtnHome && homeSearchInput) {
+        const goSearch = () => {
+          const q = homeSearchInput.value.trim();
+          if (q) {
+            homeSearchInput.value = '';
+            suggestionsHome.classList.remove('active');
+            location.href = `service.html?q=${encodeURIComponent(q)}`;
+          }
+        };
+        searchBtnHome.addEventListener('click', goSearch);
+        homeSearchInput.addEventListener('keydown', e => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            goSearch();
+          }
+        });
+        homeSearchInput.addEventListener('input', e => {
+          const q = e.target.value.trim().toLowerCase();
+          if (!q) {
+            suggestionsHome.classList.remove('active');
+            return;
+          }
+          const exact = itemsHome.filter(i => i.name.toLowerCase().includes(q));
+          const category = itemsHome.filter(i => !i.name.toLowerCase().includes(q) && i.category.toLowerCase().includes(q));
+          const partial = itemsHome.filter(i => !i.name.toLowerCase().includes(q) && !i.category.toLowerCase().includes(q) && (i.description.toLowerCase().includes(q) || (i.type && i.type.toLowerCase().includes(q)) || (i.style && i.style.toLowerCase().includes(q)) || (i.color && i.color.toLowerCase().includes(q))));
+          const sugg = [...exact, ...category, ...partial].slice(0, 8);
+          if (sugg.length === 0) {
+            suggestionsHome.innerHTML = '<div class="suggestion-item-home" style="color:#999;cursor:default;border:none">لا توجد نتائج</div>';
+            suggestionsHome.classList.add('active');
+            return;
+          }
+          suggestionsHome.innerHTML = sugg.map(item => {
+            const badge = item.category === 'سجاف' ? '🧵' : item.category === 'كوشة' ? '👑' : '👗';
+            const start = item.name.toLowerCase().indexOf(q);
+            const hl = start !== -1 ? item.name.slice(0, start) + `<span class="suggestion-highlight">${item.name.slice(start, start + q.length)}</span>` + item.name.slice(start + q.length) : item.name;
+            return `<div class="suggestion-item-home" data-name="${item.name}"><span class="suggestion-icon-home">${badge}</span><span>${hl}</span></div>`;
+          }).join('');
+          suggestionsHome.classList.add('active');
+          document.querySelectorAll('.suggestion-item-home').forEach(item => {
+            item.addEventListener('click', e => {
+              const name = e.currentTarget.dataset.name;
+              homeSearchInput.value = name;
+              suggestionsHome.classList.remove('active');
+              location.href = `service.html?q=${encodeURIComponent(name)}`;
+            });
+          });
+        });
+        document.addEventListener('click', e => {
+          if (!e.target.closest('.search-wrapper-home')) {
+            suggestionsHome.classList.remove('active');
+          }
+        });
+      }
     }
+    initSearchHome();
     let currentSlideIndex = 0;
     const autoSlideInterval = 6000;
 
@@ -465,3 +581,4 @@
   </script>
 </body>
 </html>
+
