@@ -50,6 +50,16 @@
     .hero{max-width:var(--maxw);margin:24px auto;padding:40px;border-radius:14px;background:linear-gradient(135deg,#fffaf6,#fff);box-shadow:0 10px 40px rgba(184,134,11,0.08);text-align:center}
     .hero h1{color:var(--gold);font-size:32px;margin:0 0 12px;font-weight:900}
     .hero p{color:var(--black);margin:0;font-weight:700;font-size:16px}
+    
+    /* search suggestions */
+    .search-wrapper{position:relative;max-width:720px;margin:18px auto 0;display:block}
+    .search-suggestions{position:absolute;top:100%;left:0;right:0;background:#fff;border:2px solid rgba(184,134,11,0.2);border-top:none;border-radius:0 0 10px 10px;max-height:320px;overflow-y:auto;display:none;z-index:999;box-shadow:0 10px 25px rgba(0,0,0,0.1)}
+    .search-suggestions.active{display:block}
+    .suggestion-item{padding:12px 14px;cursor:pointer;border-bottom:1px solid rgba(184,134,11,0.1);font-weight:700;color:var(--black);transition:all .2s;font-size:14px;display:flex;align-items:center;gap:8px}
+    .suggestion-item:last-child{border-bottom:none}
+    .suggestion-item:hover{background:rgba(184,134,11,0.08);color:var(--gold)}
+    .suggestion-item .suggestion-icon{color:var(--gold);font-size:12px}
+    .suggestion-highlight{color:var(--gold);font-weight:900}
 
     /* container */
     .container{max-width:var(--maxw);margin:24px auto;padding:0 24px 40px}
@@ -152,10 +162,40 @@
       nav.main-nav button{padding:10px 16px;font-size:13px}
       nav.main-nav a{padding:10px 14px;font-size:12px}
       .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-      .header-inner{flex-direction:column;gap:12px;padding:12px}
-      .hero{padding:24px}
-      .hero h1{font-size:24px}
+      .header-inner{flex-direction:column;gap:12px;padding:12px;align-items:flex-start}
+      .hero{padding:24px;margin:16px auto}
+      .hero h1{font-size:24px;margin-bottom:8px}
+      .hero p{font-size:14px}
+      .search-wrapper{margin:12px auto 0;padding:0 12px;width:100%;position:relative}
+      #searchInput{width:100% !important;font-size:13px !important;padding:10px 12px !important}
+      .search-suggestions{max-height:250px;font-size:12px;max-width:100%;right:0;left:0}
+      .suggestion-item{padding:10px 12px;font-size:12px}
       .contact-grid{grid-template-columns:1fr}
+      .menu-toggle{padding:8px;font-size:18px}
+      .site-title{font-size:16px}
+      .site-sub{font-size:11px}
+      
+      /* تحسين الـ nav على الهاتف */
+      nav.main-nav{position:fixed;top:70px;right:0;left:0;background:rgba(255,255,255,0.99);border:1px solid rgba(184,134,11,0.2);border-radius:8px;padding:8px;flex-direction:column;gap:6px;box-shadow:0 8px 30px rgba(0,0,0,0.15);max-height:none}
+      nav.main-nav button, nav.main-nav a{font-size:13px;padding:10px 12px;width:100%;justify-content:flex-start}
+    }
+    
+    @media(max-width:600px){
+      .header-inner{padding:10px 8px}
+      .hero{padding:14px 12px;margin:12px 12px}
+      .hero h1{font-size:20px}
+      .container{padding:0 12px 30px}
+      .grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+      .card-body{padding:12px}
+      .title{font-size:16px}
+      .desc{font-size:13px}
+      .btn{font-size:12px;padding:10px}
+      .filters{flex-direction:column;align-items:center;gap:8px;padding:12px}
+      .filter{width:100%;max-width:none;justify-content:center}
+      .search-wrapper{padding:0 8px;width:calc(100% - 16px)}
+      #searchInput{font-size:12px !important;padding:8px 10px !important}
+      .search-suggestions{max-height:200px;font-size:11px;max-width:calc(100vw - 16px)}
+      .suggestion-item{padding:8px 10px;font-size:11px}
     }
   </style>
 </head>
@@ -187,8 +227,9 @@
   <section class="hero">
     <h1>استأجر ما يناسبك</h1>
     <p>تصاميم فاخرة وحصرية لتأجيرها في أهم مناسباتك</p>
-    <div style="margin-top:18px;max-width:720px;margin-inline:auto;">
-      <input id="searchInput" type="search" placeholder="ابحث عن القالب، اللون، أو الستايل" style="width:100%;padding:12px 14px;border:2px solid rgba(184,134,11,0.3);border-radius:10px;font-size:14px;font-weight:700;outline:none;box-shadow:0 5px 20px rgba(0,0,0,0.05);">
+    <div class="search-wrapper">
+      <input id="searchInput" type="search" placeholder="ابحث عن المنتج باسمه..." style="width:100%;padding:12px 14px;border:2px solid rgba(184,134,11,0.3);border-radius:10px;font-size:14px;font-weight:700;outline:none;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:all .2s;" autocomplete="off">
+      <div class="search-suggestions" id="searchSuggestions"></div>
     </div>
   </section>
 
@@ -285,6 +326,7 @@
           <ul>
             <li><i class="fas fa-mobile-alt"></i> <a href="tel:+967770075591">+967770075591</a></li>
             <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+967770075591">رسالة عبر WhatsApp</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@ezaxy.store">info@ezaxy.store</a></li>
             <li><i class="fas fa-map-marker-alt"></i> صنعاء - بيت معياد - امام الذوق الايطالي للاحذيه </li>
           </ul>
         </div>
@@ -313,9 +355,10 @@
 
     // قراءة معاملي category و q من URL
     const urlParams = new URLSearchParams(window.location.search);
-    const categoryParam = urlParams.get('category');
+    let categoryParam = urlParams.get('category');
     const searchParam = urlParams.get('q') || '';
     let currentSearch = '';
+    
     if (categoryParam && ['سجاف', 'كوشة', 'فساتين'].includes(categoryParam)) {
       currentCategory = categoryParam;
     }
@@ -409,7 +452,31 @@
       searchInput.addEventListener('input', e => {
         currentSearch = e.target.value;
         currentPage = 1;
+        updateSuggestions();
         render();
+      });
+      
+      searchInput.addEventListener('keypress', e => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('searchSuggestions').classList.remove('active');
+          searchInput.value = '';
+          currentSearch = '';
+          currentPage = 1;
+          render();
+        }
+      });
+      
+      searchInput.addEventListener('focus', () => {
+        if (currentSearch.trim()) {
+          updateSuggestions();
+        }
+      });
+      
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.search-wrapper')) {
+          document.getElementById('searchSuggestions').classList.remove('active');
+        }
       });
     }
 
@@ -439,17 +506,121 @@
       });
     }
 
-    function getFilteredList() {
-      let list = items.filter(i => i.category === currentCategory);
-      if (currentSubFilter !== 'all') {
-        list = list.filter(i => i.type === currentSubFilter);
+    function updateSuggestions() {
+      const query = currentSearch.trim().toLowerCase();
+      const suggestionsContainer = document.getElementById('searchSuggestions');
+      
+      if (!query) {
+        suggestionsContainer.classList.remove('active');
+        return;
       }
-      const q = currentSearch.trim().toLowerCase();
-      if (q) {
-        list = list.filter(i => {
-          const haystack = `${i.name} ${i.description} ${i.type} ${i.style} ${i.color}`.toLowerCase();
-          return haystack.includes(q);
+      
+      let suggestions = [];
+      
+      // البحث على جميع الفئات والخصائص
+      // البحث الأساسي على اسم المنتج أولاً
+      const exactMatches = items.filter(i => 
+        i.name.toLowerCase().includes(query)
+      );
+      
+      // ثم البحث على الفئة (البحث عن كوشة، سجاف، فستان، إلخ)
+      const categoryMatches = items.filter(i => 
+        !i.name.toLowerCase().includes(query) &&
+        i.category.toLowerCase().includes(query)
+      );
+      
+      // ثم البحث على الوصف والخصائص الأخرى (اللون، الأسلوب، النوع)
+      const partialMatches = items.filter(i => 
+        !i.name.toLowerCase().includes(query) && 
+        !i.category.toLowerCase().includes(query) &&
+        (i.description.toLowerCase().includes(query) || 
+         (i.type && i.type.toLowerCase().includes(query)) ||
+         (i.style && i.style.toLowerCase().includes(query)) ||
+         (i.color && i.color.toLowerCase().includes(query)))
+      );
+      
+      suggestions = [...exactMatches, ...categoryMatches, ...partialMatches].slice(0, 8);
+      
+      if (suggestions.length === 0) {
+        suggestionsContainer.innerHTML = `<div class="suggestion-item" style="color:#999;cursor:default">لا توجد نتائج</div>`;
+        suggestionsContainer.classList.add('active');
+        return;
+      }
+      
+      suggestionsContainer.innerHTML = suggestions.map(item => {
+        const name = item.name;
+        const categoryBadge = item.category === 'سجاف' ? '🧵' : item.category === 'كوشة' ? '👑' : '👗';
+        const highlightStart = name.toLowerCase().indexOf(query);
+        const highlightedName = highlightStart !== -1 
+          ? name.slice(0, highlightStart) + 
+            `<span class="suggestion-highlight">${name.slice(highlightStart, highlightStart + query.length)}</span>` +
+            name.slice(highlightStart + query.length)
+          : name;
+        
+        return `<div class="suggestion-item" data-name="${item.name}" data-category="${item.category}">
+          <span class="suggestion-icon">${categoryBadge}</span>
+          <span>${highlightedName}</span>
+        </div>`;
+      }).join('');
+      
+      suggestionsContainer.classList.add('active');
+      
+      document.querySelectorAll('.suggestion-item').forEach(item => {
+        item.addEventListener('click', e => {
+          const productName = e.currentTarget.dataset.name;
+          const productCategory = e.currentTarget.dataset.category;
+          searchInput.value = productName;
+          currentSearch = productName;
+          
+          // إذا كانت الفئة مختلفة، تغيير الفئة والانتقال لها
+          if (currentCategory !== productCategory) {
+            currentCategory = productCategory;
+            navTabs.forEach(tab => {
+              tab.classList.remove('active');
+              if (tab.dataset.category === productCategory) {
+                tab.classList.add('active');
+              }
+            });
+            renderTabs();
+          }
+          
+          currentPage = 1;
+          currentSubFilter = 'all';
+          suggestionsContainer.classList.remove('active');
+          
+          // تأكيد من اختيار البحث
+          render();
         });
+      });
+    }
+
+    function getFilteredList() {
+      const q = currentSearch.trim().toLowerCase();
+      let list = items;
+      
+      // عند البحث: البحث في جميع الفئات، وليس فقط الفئة الحالية
+      if (!q) {
+        // إذا لم يوجد بحث، استخدم الفئة الحالية والفلتر الفرعي
+        list = items.filter(i => i.category === currentCategory);
+        if (currentSubFilter !== 'all') {
+          list = list.filter(i => i.type === currentSubFilter);
+        }
+      } else {
+        // عند البحث، ابحث في جميع الفئات
+        // البحث المتقدم: البحث في الاسم والوصف واللون والأسلوب والنوع والفئة
+        list = list.filter(i => {
+          const searchableText = `${i.name} ${i.category} ${i.description} ${i.type} ${i.style || ''} ${i.color || ''}`.toLowerCase();
+          return searchableText.includes(q);
+        });
+        
+        // ترتيب النتائج: البحث في الاسم أولاً ثم في الفئة ثم في الخصائص الأخرى
+        const nameMatches = list.filter(i => i.name.toLowerCase().includes(q));
+        const categoryMatches = list.filter(i => !i.name.toLowerCase().includes(q) && i.category.toLowerCase().includes(q));
+        const otherMatches = list.filter(i => 
+          !i.name.toLowerCase().includes(q) && 
+          !i.category.toLowerCase().includes(q)
+        );
+        list = [...nameMatches, ...categoryMatches, ...otherMatches];
       }
       return list;
     }
