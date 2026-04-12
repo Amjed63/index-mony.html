@@ -1,542 +1,1532 @@
 [
-    {
-        "id": 1,
-        "name": "سجاف بورد فاخر",
-        "category": "سجاف",
-        "type": "سجاف",
-        "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/1.jpg?raw=true",
-        "description": "سجاف فاخر بتصميم يناسب المناسبات الخاصة.",
-        "features": [
-            "ستاره سكري + ورد",
-            "تصميم أنيق",
-            "مناسب لجميع القاعات"
-        ],
-        "gallery": [
-            "https://github.com/Amjed63/index-mony.html/blob/main/img/img/1.jpg?raw=true"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "فاخر",
-        "color": "سكري"
-    },
-    {
-        "id": 2,
-        "name": "سجاف مودرن ",
-        "category": "سجاف",
-        "type": "جدر",
-        "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/13.jpg?raw=true",
-        "description": "لمسة عصرية ونظيفة بمظهر أنيق.",
-        "features": [
-            "  ستاره سكري + سماوي + ورد ",
-            "تصميم راقي",
-            "سهل النقل والتركيب"
-        ],
-        "gallery": [
-            "https://github.com/Amjed63/index-mony.html/blob/main/img/img/13.jpg?raw=true"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "حديث",
-        "color": "سكري + سماوي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 3,
-        "name": "سجاف ملكي فاخر",
-        "category": "سجاف",
-        "type": "ملكي",
-        "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/11.jpg?raw=true",
-        "description": "سجاف ثابت وأنيق.",
-        "features": [
-            "  ستاره سكري + سماوي + ورد ",
-            "إضاءة جميلة",
-            "هناك تخصيص السجاف على حسب الطلب"
-        ],
-        "gallery": [
-            "https://github.com/Amjed63/index-mony.html/blob/main/img/img/11.jpg?raw=true",
-            "https://github.com/Amjed63/index-mony.html/blob/main/img/img/7.jpg?raw=true"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "كلاسيكي",
-        "color": "سكري + سماوي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 4,
-        "name": "سجاف جدر صنعاني  ",
-        "category": "سجاف",
-        "type": "جدر",
-        "image": "img\/img\/4.jpg",
-        "description": "ألوان زاهية وتصميم شبابي.",
-        "features": [
-            "ألوان جذابة",
-            "تصميم قوي",
-            "خامات مرنة"
-        ],
-        "gallery": [
-            "img\/img\/4.jpg",
-            "img\/img\/5.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "سكري + سماوي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 5,
-        "name": "سجاف مهم فاخر",
-        "category": "سجاف",
-        "type": "مهم",
-        "image": "img\/img\/5.jpg",
-        "description": "تفاصيل دقيقة وخامات ممتازة.",
-        "features": [
-            "تفاصيل دقيقة",
-            "خامات ممتازة",
-            "خدمة تركيب"
-        ],
-        "gallery": [
-            "img\/img\/5.jpg",
-            "img\/img\/5a.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "فاخر",
-        "color": "سكري",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 6,
-        "name": "سجاف جدر صغير",
-        "category": "سجاف",
-        "type": "مهم",
-        "image": "img\/img\/6.jpg",
-        "description": "مناسب للمساحات الضيقة.",
-        "features": [
-            "مناسب للمساحات الصغيرة",
-            "خفة وزن",
-            "سهل التخزين"
-        ],
-        "gallery": [
-            "img\/img\/6.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "مودرن",
-        "color": "سكري",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 7,
-        "name": "كوشة ملكية",
-        "category": "كوشة",
-        "type": "فاخرة",
-        "image": "img\/img\/k1.jpg",
-        "description": "كوشة فاخرة بتصاميم قطع الذهب والفضة.",
-        "features": [
-            "تصميم ملكي",
-            "خامات فاخرة",
-            "تركيب احترافي"
-        ],
-        "gallery": [
-            "img\/img\/k1.jpg",
-            "img\/img\/k2.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "تراثي",
-        "color": "ذهبي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 21,
-        "name": "كوشة جديدة مميزة",
-        "category": "كوشة",
-        "type": "حديثة",
-        "image": "https:\/\/scontent-hbe1-2.xx.fbcdn.net\/v\/t39.30808-6\/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D",
-        "description": "كوشة لافتة بتصميم عصري وصورة جميلة.",
-        "features": [
-            "تصميم عصري",
-            "خامة قوية",
-            "تركيب سريع"
-        ],
-        "gallery": [
-            "https:\/\/scontent-hbe1-2.xx.fbcdn.net\/v\/t39.30808-6\/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\/\/www.instagram.com\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "حديث",
-        "color": "ذهبي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 21,
-        "name": "كوشة صور 1",
-        "category": "كوشة",
-        "type": "عصرية",
-        "image": "https:\/\/scontent-hbe1-2.xx.fbcdn.net\/v\/t39.30808-6\/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
-        "description": "كوشة من الصور المرسلة 1.",
-        "features": [
-            "تصميم عصري",
-            "تفاصيل دقيقة",
-            "خامة ممتازة"
-        ],
-        "gallery": [
-            "https:\/\/scontent-hbe1-2.xx.fbcdn.net\/v\/t39.30808-6\/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
-            "https:\/\/scontent-hbe1-1.xx.fbcdn.net\/v\/t39.30808-6\/486471086_2106174749807265_1430112388184789482_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dWCCGbdhq0MQ7kNvwHGlLMB&_nc_oc=Adq9b2TKBUuUVMxOYTT9-55hOISU3BgGq3aIG1kb1JHgv_tD0PGqHR9E5qXCd755wa4&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=wX693LGgpcUXTb90Hk_yLg&_nc_ss=7a30f&oh=00_AfxypWowJVdBt2Ku8aoWcsTly0sgKU75FemQjmlk7LmulQ&oe=69C46AD4"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\/\/www.instagram.com\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "صنعاني",
-        "color": "ذهبي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 22,
-        "name": "كوشة صورة 2",
-        "category": "كوشة",
-        "type": "عصرية",
-        "image": "https:\/\/scontent-hbe1-1.xx.fbcdn.net\/v\/t39.30808-6\/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15",
-        "description": "كوشة من الصور المرسلة 2.",
-        "features": [
-            "ألوان جذابة",
-            "تصميم أنيق",
-            "خفة وزن"
-        ],
-        "gallery": [
-            "https:\/\/scontent-hbe1-1.xx.fbcdn.net\/v\/t39.30808-6\/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\/\/www.instagram.com\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "صنعاني",
-        "color": "أبيض",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 23,
-        "name": "كوشة صورة 3",
-        "category": "كوشة",
-        "type": "عصرية",
-        "image": "https:\/\/scontent-hbe1-1.xx.fbcdn.net\/v\/t39.30808-6\/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907",
-        "description": "كوشة من الصور المرسلة 3.",
-        "features": [
-            "تفاصيل رائعة",
-            "إضاءة جميلة",
-            "خامة جيدة"
-        ],
-        "gallery": [
-            "https:\/\/scontent-hbe1-1.xx.fbcdn.net\/v\/t39.30808-6\/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\/\/www.instagram.com\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "أزرق",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 8,
-        "name": "كوشة عصرية",
-        "category": "كوشة",
-        "type": "حديثة",
-        "image": "img\/img\/k2.jpg",
-        "description": "كوشة بتصميم عصري وألوان مشرقة.",
-        "features": [
-            "تصميم عصري",
-            "ألوان جذابة",
-            "خفة وزن"
-        ],
-        "gallery": [
-            "img\/img\/k2.jpg",
-            "img\/img\/k3.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "أبيض",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 9,
-        "name": "كوشة بسيطة أنيقة",
-        "category": "كوشة",
-        "type": "عملية",
-        "image": "img\/img\/k3.jpg",
-        "description": "كوشة بسيطة وأنيقة مع تفاصيل دقيقة.",
-        "features": [
-            "تصميم بسيط",
-            "سعر مناسب",
-            "سهل التركيب"
-        ],
-        "gallery": [
-            "img\/img\/k3.jpg",
-            "img\/img\/k4.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "كلاسيكي",
-        "color": "أحمر",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 10,
-        "name": "فستان زفاف كلاسيكي",
-        "category": "فساتين",
-        "type": "زفاف",
-        "image": "img\/img\/dress1.jpg",
-        "description": "فستان زفاف كلاسيكي بتصميم فريد وخامات فاخرة.",
-        "features": [
-            "خامة حرير",
-            "تطريز يدوي",
-            "قابل للتعديل"
-        ],
-        "gallery": [
-            "img\/img\/dress1.jpg",
-            "img\/img\/dress2.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "كلاسيكي",
-        "color": "أبيض",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 11,
-        "name": "فستان عصري مودرن",
-        "category": "فساتين",
-        "type": "عصري",
-        "image": "img\/img\/dress2.jpg",
-        "description": "فستان عصري برقة وأناقة بألوان متعددة.",
-        "features": [
-            "تصميم عصري",
-            "خامة مريحة",
-            "ألوان جذابة"
-        ],
-        "gallery": [
-            "img\/img\/dress2.jpg",
-            "img\/img\/dress3.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "ملون",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 12,
-        "name": "فستان سهرة أنيق",
-        "category": "فساتين",
-        "type": "سهرة",
-        "image": "img\/img\/dress3.jpg",
-        "description": "فستان سهرة براقع وتلميع فاخر.",
-        "features": [
-            "براقع حقيقية",
-            "خيطة ذهبية",
-            "تصميم ملفت"
-        ],
-        "gallery": [
-            "img\/img\/dress3.jpg",
-            "img\/img\/dress4.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "فاخر",
-        "color": "أسود",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 13,
-        "name": "سجاف تراثي فخم",
-        "category": "سجاف",
-        "type": "جدر",
-        "image": "img\/img\/17.jpg",
-        "description": "تصميم تراثي بطابع أصيل وخامات متينة.",
-        "features": [
-            "تصميم تراثي أصيل",
-            "خامات محلية فاخرة",
-            "تركيب احترافي"
-        ],
-        "gallery": [
-            "img\/img\/17.jpg",
-            "img\/img\/18.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "تراثي",
-        "color": "بني",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 14,
-        "name": "سجاف مهم متطور",
-        "category": "سجاف",
-        "type": "مهم",
-        "image": "img\/img\/18.jpg",
-        "description": "سجاف مهم بتقنيات حديثة وألوان عصرية.",
-        "features": [
-            "تقنيات حديثة",
-            "ألوان عصرية",
-            "سهل الصيانة"
-        ],
-        "gallery": [
-            "img\/img\/18.jpg",
-            "img\/img\/19.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "ملون",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 15,
-        "name": "كوشة مزخرفة",
-        "category": "كوشة",
-        "type": "فاخرة",
-        "image": "img\/img\/k4.jpg",
-        "description": "كوشة مزخرفة بتفاصيل يدوية دقيقة.",
-        "features": [
-            "تزخرفات يدوية",
-            "تصميم حصري",
-            "خامات فاخرة جداً"
-        ],
-        "gallery": [
-            "img\/img\/k4.jpg",
-            "img\/img\/k7.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "تراثي",
-        "color": "ذهبي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 16,
-        "name": "كوشة حديثة متعددة الألوان",
-        "category": "كوشة",
-        "type": "حديثة",
-        "image": "img\/img\/k7.jpg",
-        "description": "كوشة بألوان متعددة وتصميم عصري جداً.",
-        "features": [
-            "ألوان متعددة",
-            "تصميم عصري",
-            "خفيفة الوزن"
-        ],
-        "gallery": [
-            "img\/img\/k7.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "ملون",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 17,
-        "name": "فستان زفاف فاخر",
-        "category": "فساتين",
-        "type": "زفاف",
-        "image": "img\/img\/dress4.jpg",
-        "description": "فستان زفاف بتطريز يدوي وخامة حرير خالص.",
-        "features": [
-            "حرير خالص",
-            "تطريز يدوي فاخر",
-            "قابل للتعديل كاملاً"
-        ],
-        "gallery": [
-            "img\/img\/dress4.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "كلاسيكي",
-        "color": "أبيض",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 18,
-        "name": "فستان عصري ملون جميل",
-        "category": "فساتين",
-        "type": "عصري",
-        "image": "img\/img\/dress1.jpg",
-        "description": "فستان عصري بألوان متناسقة وتصميم عملي.",
-        "features": [
-            "تصميم عملي",
-            "خامة مريحة",
-            "ألوان متناسقة"
-        ],
-        "gallery": [
-            "img\/img\/dress1.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "فيروزي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 19,
-        "name": "سجاف جدر ملكي راقي",
-        "category": "سجاف",
-        "type": "مهم",
-        "image": "img\/img\/19.jpg",
-        "description": "سجاف بتصميم ملكي واحترافي جداً.",
-        "features": [
-            "تصميم ملكي",
-            "خامات ممتازة",
-            "تركيب احترافي"
-        ],
-        "gallery": [
-            "img\/img\/19.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "فاخر",
-        "color": "ذهبي",
-        "email": "omhsam999@gmail.com"
-    },
-    {
-        "id": 20,
-        "name": "سجاف مهم حديث",
-        "category": "سجاف",
-        "type": "مهم",
-        "image": "img\/img\/8.jpg",
-        "description": "سجاف مهم بطابع عصري وحديث جداً.",
-        "features": [
-            "تصميم حديث",
-            "خامات مختارة",
-            "سعر مناسب"
-        ],
-        "gallery": [
-            "img\/img\/8.jpg"
-        ],
-        "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-        "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        "phone": "+967770075591",
-        "style": "عصري",
-        "color": "أبيض",
-        "email": "omhsam999@gmail.com"
-    }
+  {
+    "id": 1,
+    "name": "سجاف بورد فاخر",
+    "category": "سجاف",
+    "type": "سجاف",
+    "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/1.jpg?raw=true",
+    "description": "سجاف فاخر بتصميم يناسب المناسبات الخاصة.",
+    "features": [
+      "ستاره سكري + ورد",
+      "تصميم أنيق",
+      "مناسب لجميع القاعات"
+    ],
+    "gallery": [
+      "https://github.com/Amjed63/index-mony.html/blob/main/img/img/1.jpg?raw=true"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "فاخر",
+    "color": "أبيض"
+  },
+  {
+    "id": 2,
+    "name": "سجاف مودرن ",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/13.jpg?raw=true",
+    "description": "لمسة عصرية ونظيفة بمظهر أنيق.",
+    "features": [
+      "  ستاره سكري + سماوي + ورد ",
+      "تصميم راقي",
+      "سهل النقل والتركيب"
+    ],
+    "gallery": [
+      "https://github.com/Amjed63/index-mony.html/blob/main/img/img/13.jpg?raw=true"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "حديث",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "سجاف ملكي فاخر",
+    "category": "سجاف",
+    "type": "ملكي",
+    "image": "https://github.com/Amjed63/index-mony.html/blob/main/img/img/11.jpg?raw=true",
+    "description": "سجاف ثابت وأنيق.",
+    "features": [
+      "  ستاره سكري + سماوي + ورد ",
+      "إضاءة جميلة",
+      "هناك تخصيص السجاف على حسب الطلب"
+    ],
+    "gallery": [
+      "https://github.com/Amjed63/index-mony.html/blob/main/img/img/11.jpg?raw=true",
+      "https://github.com/Amjed63/index-mony.html/blob/main/img/img/7.jpg?raw=true"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "كلاسيكي",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "سجاف جدر صنعاني  ",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "img/img/4.jpg",
+    "description": "ألوان زاهية وتصميم شبابي.",
+    "features": [
+      "ألوان جذابة",
+      "تصميم قوي",
+      "خامات مرنة"
+    ],
+    "gallery": [
+      "img/img/4.jpg",
+      "img/img/5.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "سجاف مهم فاخر",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/5.jpg",
+    "description": "تفاصيل دقيقة وخامات ممتازة.",
+    "features": [
+      "تفاصيل دقيقة",
+      "خامات ممتازة",
+      "خدمة تركيب"
+    ],
+    "gallery": [
+      "img/img/5.jpg",
+      "img/img/5a.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "فاخر",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 6,
+    "name": "سجاف جدر صغير",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/6.jpg",
+    "description": "مناسب للمساحات الضيقة.",
+    "features": [
+      "مناسب للمساحات الصغيرة",
+      "خفة وزن",
+      "سهل التخزين"
+    ],
+    "gallery": [
+      "img/img/6.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "مودرن",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 13,
+    "name": "سجاف تراثي فخم",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "img/img/17.jpg",
+    "description": "تصميم تراثي بطابع أصيل وخامات متينة.",
+    "features": [
+      "تصميم تراثي أصيل",
+      "خامات محلية فاخرة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/17.jpg",
+      "img/img/18.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "تراثي",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 14,
+    "name": "سجاف مهم متطور",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/18.jpg",
+    "description": "سجاف مهم بتقنيات حديثة وألوان عصرية.",
+    "features": [
+      "تقنيات حديثة",
+      "ألوان عصرية",
+      "سهل الصيانة"
+    ],
+    "gallery": [
+      "img/img/18.jpg",
+      "img/img/19.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أزرق فاتح",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 19,
+    "name": "سجاف جدر ملكي راقي",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/19.jpg",
+    "description": "سجاف بتصميم ملكي واحترافي جداً.",
+    "features": [
+      "تصميم ملكي",
+      "خامات ممتازة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/19.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "فاخر",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 20,
+    "name": "سجاف مهم حديث",
+    "category": "سجاف",
+    "type": "مهم",
+    "image": "img/img/8.jpg",
+    "description": "سجاف مهم بطابع عصري وحديث جداً.",
+    "features": [
+      "تصميم حديث",
+      "خامات مختارة",
+      "سعر مناسب"
+    ],
+    "gallery": [
+      "img/img/8.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 7,
+    "name": "كوشة ملكية",
+    "category": "كوشة",
+    "type": "فاخرة",
+    "image": "img/img/k1.jpg",
+    "description": "كوشة فاخرة بتصاميم قطع الذهب والفضة.",
+    "features": [
+      "تصميم ملكي",
+      "خامات فاخرة",
+      "تركيب احترافي"
+    ],
+    "gallery": [
+      "img/img/k1.jpg",
+      "img/img/k2.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "تراثي",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 21,
+    "name": "كوشة جديدة مميزة",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D",
+    "description": "كوشة لافتة بتصميم عصري وصورة جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة قوية",
+      "تركيب سريع"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/486612302_2106174999807240_4136588696314401946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tkY2rXr5gO4Q7kNvwEaSlO_&_nc_oc=AdoBAFyDap6YMB5oeHMLTM_Q58EkFmplZjvxlNmltl8N6rMMb_cMMEqldMA4_RYRk_A&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=wKXfDBT7CL9NcPyN1xPNYw&_nc_ss=7a30f&oh=00_Afwh9bFcA_vCGuDcMc3P2M3KjXcM255mdkoE2hEEs2yczA&oe=69C4503D"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "حديث",
+    "color": "غير محدد",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 21,
+    "name": "كوشة صور 1",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
+    "description": "كوشة من الصور المرسلة 1.",
+    "features": [
+      "تصميم عصري",
+      "تفاصيل دقيقة",
+      "خامة ممتازة"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/487316155_2106174596473947_7771949698453567470_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R2opjKpBaMQ7kNvwFWSaEg&_nc_oc=AdpgSl7HWBFmQzEX7uWODC_vmwyI0hmmBmz8YTmFnG4OyxFnjhNklKvHgBXLz9LVLHQ&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=4NCdQmgqxdBM7zaokYNCCg&_nc_ss=7a30f&oh=00_AfwabaZmwkbbowRIjQ1tNdIoCRQvs8RLvuSEPlKBfrXBtw&oe=69C4490D",
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486471086_2106174749807265_1430112388184789482_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dWCCGbdhq0MQ7kNvwHGlLMB&_nc_oc=Adq9b2TKBUuUVMxOYTT9-55hOISU3BgGq3aIG1kb1JHgv_tD0PGqHR9E5qXCd755wa4&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=wX693LGgpcUXTb90Hk_yLg&_nc_ss=7a30f&oh=00_AfxypWowJVdBt2Ku8aoWcsTly0sgKU75FemQjmlk7LmulQ&oe=69C46AD4"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "صنعاني",
+    "color": "غير محدد",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 22,
+    "name": "كوشة صورة 2",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15",
+    "description": "كوشة من الصور المرسلة 2.",
+    "features": [
+      "ألوان جذابة",
+      "تصميم أنيق",
+      "خفة وزن"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/486635807_2106174959807244_8170393244197530444_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=alLZVk8TaOAQ7kNvwFXxq2p&_nc_oc=AdqkrMvWvjLm-Vn7imBoCTY_d1BgBxoUDuxSAdxqtD1h0KRGIMTXQj8B5fv5vrLySFY&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=iYkphpkz0sPyJn92I8xZOQ&_nc_ss=7a30f&oh=00_Afz9c7x_5djM6mcZ8usyB6ZaLlOBYQ57HQOBCJ7qHfjzpg&oe=69C46F15"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "صنعاني",
+    "color": "غير محدد",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 23,
+    "name": "كوشة صورة 3",
+    "category": "كوشة",
+    "type": "عصرية",
+    "image": "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907",
+    "description": "كوشة من الصور المرسلة 3.",
+    "features": [
+      "تفاصيل رائعة",
+      "إضاءة جميلة",
+      "خامة جيدة"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/487201411_2106175056473901_7985815499025897708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5nKbHiUDiL4Q7kNvwEHbCYo&_nc_oc=AdrHsHxF3n1i59n7oeSFvBVsUBE_qC1q7Xc2SQmTD1kpJVjr7OQDDV8cdG-MxQqP7zI&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=85Cvc61r4Aun7KKulMqcTQ&_nc_ss=7a30f&oh=00_AfwYLHqr_fq4MlhXcLV86MUJrFZSHSr6Xy5uaRdZEh9IzA&oe=69C44907"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "غير محدد",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 8,
+    "name": "كوشة عصرية",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "img/img/k2.jpg",
+    "description": "كوشة بتصميم عصري وألوان مشرقة.",
+    "features": [
+      "تصميم عصري",
+      "ألوان جذابة",
+      "خفة وزن"
+    ],
+    "gallery": [
+      "img/img/k2.jpg",
+      "img/img/k3.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 9,
+    "name": "كوشة بسيطة أنيقة",
+    "category": "كوشة",
+    "type": "عملية",
+    "image": "img/img/k3.jpg",
+    "description": "كوشة بسيطة وأنيقة مع تفاصيل دقيقة.",
+    "features": [
+      "تصميم بسيط",
+      "سعر مناسب",
+      "سهل التركيب"
+    ],
+    "gallery": [
+      "img/img/k3.jpg",
+      "img/img/k4.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "كلاسيكي",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 15,
+    "name": "كوشة مزخرفة",
+    "category": "كوشة",
+    "type": "فاخرة",
+    "image": "img/img/k4.jpg",
+    "description": "كوشة مزخرفة بتفاصيل يدوية دقيقة.",
+    "features": [
+      "تزخرفات يدوية",
+      "تصميم حصري",
+      "خامات فاخرة جداً"
+    ],
+    "gallery": [
+      "img/img/k4.jpg",
+      "img/img/k7.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "تراثي",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 16,
+    "name": "كوشة حديثة متعددة الألوان",
+    "category": "كوشة",
+    "type": "حديثة",
+    "image": "img/img/k7.jpg",
+    "description": "كوشة بألوان متعددة وتصميم عصري جداً.",
+    "features": [
+      "ألوان متعددة",
+      "تصميم عصري",
+      "خفيفة الوزن"
+    ],
+    "gallery": [
+      "img/img/k7.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 10,
+    "name": "فستان زفاف كلاسيكي",
+    "category": "أزياء",
+    "type": "زفاف",
+    "image": "img/img/dress1.jpg",
+    "description": "فستان زفاف كلاسيكي بتصميم فريد وخامات فاخرة.",
+    "features": [
+      "خامة حرير",
+      "تطريز يدوي",
+      "قابل للتعديل"
+    ],
+    "gallery": [
+      "img/img/dress1.jpg",
+      "img/img/dress2.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "كلاسيكي",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 11,
+    "name": "فستان عصري مودرن",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/dress2.jpg",
+    "description": "فستان عصري برقة وأناقة بألوان متعددة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/dress2.jpg",
+      "img/img/dress3.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 12,
+    "name": "فستان سهرة أنيق",
+    "category": "أزياء",
+    "type": "سهرة",
+    "image": "img/img/dress3.jpg",
+    "description": "فستان سهرة براقع وتلميع فاخر.",
+    "features": [
+      "براقع حقيقية",
+      "خيطة ذهبية",
+      "تصميم ملفت"
+    ],
+    "gallery": [
+      "img/img/dress3.jpg",
+      "img/img/dress4.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "فاخر",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 17,
+    "name": "فستان زفاف فاخر",
+    "category": "أزياء",
+    "type": "زفاف",
+    "image": "img/img/dress4.jpg",
+    "description": "فستان زفاف بتطريز يدوي وخامة حرير خالص.",
+    "features": [
+      "حرير خالص",
+      "تطريز يدوي فاخر",
+      "قابل للتعديل كاملاً"
+    ],
+    "gallery": [
+      "img/img/dress4.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "كلاسيكي",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 18,
+    "name": "فستان عصري ملون جميل",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/dress1.jpg",
+    "description": "فستان عصري بألوان متناسقة وتصميم عملي.",
+    "features": [
+      "تصميم عملي",
+      "خامة مريحة",
+      "ألوان متناسقة"
+    ],
+    "gallery": [
+      "img/img/dress1.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 24,
+    "name": "أزياء عصرية d0 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d0.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d0.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "زيتي",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 25,
+    "name": "أزياء عصرية d1 - رمادي فاتح",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d1.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d1.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "سكري",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 26,
+    "name": "أزياء عصرية d2 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d2.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d2.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 27,
+    "name": "أزياء عصرية d3 - أبيض",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d3.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d3.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "-",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 28,
+    "name": "أزياء عصرية d4 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d4.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d4.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "سكري",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 29,
+    "name": "أزياء عصرية d5 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d5.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d5.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "زيتي",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 30,
+    "name": "أزياء عصرية d6 - أزرق",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d6.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d6.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "سماوي",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 31,
+    "name": "أزياء عصرية d7 - أحمر",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d7.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d7.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أحمر",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 32,
+    "name": "أزياء عصرية d8 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d8.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d8.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 33,
+    "name": "أزياء عصرية d9 - أزرق فاتح",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d9.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d9.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 34,
+    "name": "أزياء عصرية d10 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d10.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d10.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 35,
+    "name": "أزياء عصرية d11 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d11.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d11.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 36,
+    "name": "أزياء عصرية d12 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d12.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d12.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 37,
+    "name": "أزياء عصرية d13 - رمادي داكن",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d13.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d13.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 38,
+    "name": "أزياء عصرية d14 - أبيض",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d14.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d14.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 39,
+    "name": "أزياء عصرية d15 - أزرق داكن",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d15.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d15.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 40,
+    "name": "أزياء عصرية d16 - برتقالي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d16.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d16.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أحمر",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 41,
+    "name": "أزياء عصرية d17 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d17.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d17.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 42,
+    "name": "أزياء عصرية d18 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d18.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d18.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 43,
+    "name": "أزياء عصرية d19 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d19.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d19.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 44,
+    "name": "أزياء عصرية d20 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d20.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d20.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 45,
+    "name": "أزياء عصرية d21 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d21.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d21.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 46,
+    "name": "أزياء عصرية d22 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d22.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d22.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 47,
+    "name": "أزياء عصرية d23 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d23.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d23.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 48,
+    "name": "أزياء عصرية d24 - كريمي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d24.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d24.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 49,
+    "name": "أزياء عصرية d25 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d25.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d25.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 50,
+    "name": "أزياء عصرية d26 - أزرق فاتح",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d26.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d26.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 51,
+    "name": "أزياء عصرية d27 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d27.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d27.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 52,
+    "name": "أزياء عصرية d28 - رمادي داكن",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d28.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d28.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 53,
+    "name": "أزياء عصرية d29 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d29.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d29.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 54,
+    "name": "أزياء عصرية d30 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d30.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d30.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 55,
+    "name": "أزياء عصرية d31 - رمادي فاتح",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d31.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d31.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 56,
+    "name": "أزياء عصرية d32 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d32.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d32.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 57,
+    "name": "أزياء عصرية d33 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d33.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d33.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 58,
+    "name": "أزياء عصرية d34 - كريمي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d34.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d34.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 59,
+    "name": "أزياء عصرية d35 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d35.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d35.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 60,
+    "name": "أزياء عصرية d36 - رمادي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d36.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d36.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 61,
+    "name": "أزياء عصرية d37 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d37.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d37.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 62,
+    "name": "أزياء عصرية d38 - أبيض",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d38.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d38.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 63,
+    "name": "أزياء عصرية d39 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d39.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d39.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 64,
+    "name": "أزياء عصرية d40 - وردي فاتح",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d40.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d40.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 65,
+    "name": "أزياء عصرية d41 - أسود",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d41.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d41.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أسود",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 66,
+    "name": "أزياء عصرية d42 - كريمي",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d42.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d42.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 67,
+    "name": "أزياء عصرية d43 - بيج",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d43.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d43.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+  {
+    "id": 68,
+    "name": "أزياء عصرية d44 - أبيض",
+    "category": "أزياء",
+    "type": "عصري",
+    "image": "img/img/d44.jpg",
+    "description": "أزياء عصرية جميلة.",
+    "features": [
+      "تصميم عصري",
+      "خامة مريحة",
+      "ألوان جذابة"
+    ],
+    "gallery": [
+      "img/img/d44.jpg"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "عصري",
+    "color": "أبيض",
+    "email": "omhsam999@gmail.com"
+  }
 ]
