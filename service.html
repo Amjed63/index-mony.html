@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>موني - تأجير السجافات والكوشات والفساتين الفاخرة</title>
-  <meta name="description" content="موني - متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك بأسعار منافسة">
+  <title>موني - تأجير السجافات والكوشات والأزياء الفاخرة</title>
+  <meta name="description" content="موني - متخصصة في تأجير السجافات والكوشات والأزياء الفاخرة لأهم مناسباتك بأسعار منافسة">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -157,6 +157,17 @@
       footer.site-footer{padding:40px 24px 20px}
     }
 
+    /* CATEGORIES */
+    .categories{max-width:1400px;margin:40px auto;padding:0 24px}
+    .section-title{text-align:center;font-size:28px;font-weight:900;color:#b8860b;margin:0 0 32px}
+    .categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+    .category-card{position:relative;height:280px;border-radius:16px;overflow:hidden;cursor:pointer;transition:all .4s;box-shadow:0 8px 25px rgba(0,0,0,0.1)}
+    .category-card img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .category-card:hover img{transform:scale(1.1)}
+    .category-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.4),rgba(184,134,11,0.4));display:flex;align-items:center;justify-content:center;transition:all .3s}
+    .category-card:hover .category-overlay{background:linear-gradient(135deg,rgba(0,0,0,0.6),rgba(184,134,11,0.6))}
+    .category-title{color:#fff;font-size:24px;font-weight:900;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
+
     /* responsive */
     @media(max-width:768px){
       nav.main-nav button{padding:10px 16px;font-size:13px}
@@ -208,7 +219,7 @@
         <div class="logo"><img src="img/img%20logo/logo2.ico" alt="شعار موني"></div>
         <div class="brand-text">
           <div class="site-title"> موني </div>
-          <div class="site-sub">سجافات • كوشات • فساتين</div>
+          <div class="site-sub">سجافات • كوشات • أزياء</div>
         </div>
       </div>
 
@@ -218,7 +229,7 @@
         <a href="search-code.html"><i class="fas fa-search"></i> بحث بالرمز</a>
         <button class="nav-tab active" data-category="سجاف"><i class="fas fa-spa"></i> السجافات</button>
         <button class="nav-tab" data-category="كوشة"><i class="fas fa-gopuram"></i> الكوشات</button>
-        <button class="nav-tab" data-category="فساتين"><i class="fas fa-ring"></i> الفساتين</button>
+        <button class="nav-tab" data-category="أزياء"><i class="fas fa-ring"></i> الأزياء</button>
       </nav>
     </div>
   </header>
@@ -234,6 +245,31 @@
   </section>
 
   <main class="container">
+    <!-- Categories -->
+    <section class="categories" id="categoriesSection">
+      <h2 class="section-title">اختر الفئة المناسبة</h2>
+      <div class="categories-grid">
+        <div class="category-card" onclick="selectCategory('سجاف')">
+          <img src="img/img/7.jpg" alt="سجافات موني">
+          <div class="category-overlay">
+            <div class="category-title"><i class="fas fa-spa"></i> السجافات</div>
+          </div>
+        </div>
+        <div class="category-card" onclick="selectCategory('كوشة')">
+          <img src="img/img/k1.jpg" alt="كوشات موني">
+          <div class="category-overlay">
+            <div class="category-title"><i class="fas fa-gopuram"></i> الكوشات</div>
+          </div>
+        </div>
+        <div class="category-card" onclick="selectCategory('أزياء')">
+          <img src="img/img/d29.jpg" alt="أزياء موني">
+          <div class="category-overlay">
+            <div class="category-title"><i class="fas fa-ring"></i> الأزياء</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Filters -->
     <section class="filters" id="filtersSection">
       <label class="filter">
@@ -295,7 +331,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <h4><i class="fas fa-info-circle"></i> عن موني</h4>
-          <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك.</p>
+          <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والأزياء الفاخرة لأهم مناسباتك.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/Sejafomhsam" class="social-btn" title="فيسبوك"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn" title="انستغرام"><i class="fab fa-instagram"></i></a>
@@ -308,7 +344,7 @@
           <ul>
             <li><a href="index.html?category=سجاف"><i class="fas fa-spa"></i> السجافات</a></li>
             <li><a href="index.html?category=كوشة"><i class="fas fa-gopuram"></i> الكوشات</a></li>
-            <li><a href="index.html?category=فساتين"><i class="fas fa-ring"></i> الفساتين</a></li>
+            <li><a href="index.html?category=أزياء"><i class="fas fa-ring"></i> الأزياء</a></li>
             <li><a href="service.html"><i class="fas fa-star"></i> معرض مشاهير</a></li>
           </ul>
         </div>
@@ -348,7 +384,7 @@
   <script>
     const perPage = 8;
     let currentPage = 1;
-    let currentCategory = 'سجاف';
+    let currentCategory = '';
     let currentSubFilter = 'all';
     let items = [];
     let currentItem = null;
@@ -359,7 +395,7 @@
     const searchParam = urlParams.get('q') || '';
     let currentSearch = '';
     
-    if (categoryParam && ['سجاف', 'كوشة', 'فساتين'].includes(categoryParam)) {
+    if (categoryParam && ['سجاف', 'كوشة', 'أزياء'].includes(categoryParam)) {
       currentCategory = categoryParam;
     }
     currentSearch = searchParam;
@@ -380,8 +416,13 @@
     const btnInstagram = document.getElementById('btnInstagram');
     const btnCall = document.getElementById('btnCall');
     const searchInput = document.getElementById('searchInput');
+    const categoriesSection = document.getElementById('categoriesSection');
     if (searchInput) {
       searchInput.value = currentSearch;
+    }
+
+    function selectCategory(category) {
+      window.location.href = `service.html?category=${category}`;
     }
     function generateCode(item) {
       if (item.code) return item.code;
@@ -425,12 +466,14 @@
 
     function initializeUI() {
       // تفعيل الـ nav tab الصحيح
-      navTabs.forEach(tab => {
-        tab.classList.remove('active');
-        if (tab.dataset.category === currentCategory) {
-          tab.classList.add('active');
-        }
-      });
+      if (currentCategory) {
+        navTabs.forEach(tab => {
+          tab.classList.remove('active');
+          if (tab.dataset.category === currentCategory) {
+            tab.classList.add('active');
+          }
+        });
+      }
       renderTabs();
       render();
     }
@@ -486,7 +529,6 @@
 
     function renderTabs(filteredForDisplay = null) {
       let itemsToRender = filteredForDisplay || items.filter(i => i.category === currentCategory);
-      const types = [...new Set(itemsToRender.map(i => i.type))];
       
       filtersSection.innerHTML = '';
       const allLabel = document.createElement('label');
@@ -494,12 +536,25 @@
       allLabel.innerHTML = `<input type="radio" name="subFilter" value="all" checked><span style="margin-left:8px;font-weight:700">الكل</span>`;
       filtersSection.appendChild(allLabel);
       
-      types.forEach(type => {
-        const label = document.createElement('label');
-        label.className = 'filter';
-        label.innerHTML = `<input type="radio" name="subFilter" value="${type}"><span style="margin-left:8px;font-weight:700">${type}</span>`;
-        filtersSection.appendChild(label);
-      });
+      if (currentCategory === 'أزياء') {
+        const dressesLabel = document.createElement('label');
+        dressesLabel.className = 'filter';
+        dressesLabel.innerHTML = `<input type="radio" name="subFilter" value="فساتين"><span style="margin-left:8px;font-weight:700">فساتين</span>`;
+        filtersSection.appendChild(dressesLabel);
+        
+        const robesLabel = document.createElement('label');
+        robesLabel.className = 'filter';
+        robesLabel.innerHTML = `<input type="radio" name="subFilter" value="أرواب"><span style="margin-left:8px;font-weight:700">أرواب</span>`;
+        filtersSection.appendChild(robesLabel);
+      } else {
+        const types = [...new Set(itemsToRender.map(i => i.type))];
+        types.forEach(type => {
+          const label = document.createElement('label');
+          label.className = 'filter';
+          label.innerHTML = `<input type="radio" name="subFilter" value="${type}"><span style="margin-left:8px;font-weight:700">${type}</span>`;
+          filtersSection.appendChild(label);
+        });
+      }
 
       document.querySelectorAll('input[name="subFilter"]').forEach(radio => {
         radio.addEventListener('change', e => {
@@ -608,9 +663,9 @@
         'كوش': 'كوشة',
         'كوشه': 'كوشة',
         'كوشة': 'كوشة',
-        // الفساتين
-        'فستان': 'فساتين',
-        'فساتين': 'فساتين',
+        // الأزياء
+        'فستان': 'أزياء',
+        'فساتين': 'أزياء',
         // السجافات
         'سجاف': 'سجافات',
         'سجافات': 'سجافات'
@@ -652,7 +707,15 @@
         // إذا لم يوجد بحث، استخدم الفئة الحالية والفلتر الفرعي
         list = items.filter(i => i.category === currentCategory);
         if (currentSubFilter !== 'all') {
-          list = list.filter(i => i.type === currentSubFilter);
+          if (currentCategory === 'أزياء') {
+            if (currentSubFilter === 'فساتين') {
+              list = list.filter(i => i.image.includes('dress'));
+            } else if (currentSubFilter === 'أرواب') {
+              list = list.filter(i => i.image.startsWith('img/img/d') && !i.image.includes('dress'));
+            }
+          } else {
+            list = list.filter(i => i.type === currentSubFilter);
+          }
         }
       } else {
         // عند البحث، ابحث في جميع الفئات
@@ -726,6 +789,20 @@
     }
 
     function render() {
+      if (currentCategory === '') {
+        categoriesSection.style.display = 'block';
+        filtersSection.style.display = 'none';
+        cardsGrid.style.display = 'none';
+        paginationContainer.style.display = 'none';
+        emptyState.style.display = 'none';
+        navTabs.forEach(tab => tab.style.display = 'none');
+        return;
+      } else {
+        categoriesSection.style.display = 'none';
+        filtersSection.style.display = 'block';
+        navTabs.forEach(tab => tab.style.display = 'inline-block');
+      }
+
       const list = getFilteredList();
       const total = list.length;
       
@@ -830,6 +907,39 @@
 
     // Load data on page load
     loadData();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "منتجات موني",
+    "description": "مجموعة من السجافات والكوشات والأزياء الفاخرة للتأجير",
+    "url": "https://yourwebsite.com/service.html",
+    "numberOfItems": 68,
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "سجافة فاخرة",
+        "category": "سجاف",
+        "image": "img/img/sajafa1.jpg",
+        "description": "سجافة فاخرة للمناسبات الخاصة"
+      },
+      {
+        "@type": "Product",
+        "name": "كوشة مريحة",
+        "category": "كوشة",
+        "image": "img/img/kosha1.jpg",
+        "description": "كوشة مريحة للجلوس والاسترخاء"
+      },
+      {
+        "@type": "Product",
+        "name": "أزياء فاخرة",
+        "category": "أزياء",
+        "image": "img/img/d0.jpg",
+        "description": "أزياء فاخرة للمناسبات الخاصة"
+      }
+    ]
+  }
   </script>
 </body>
 </html>
