@@ -208,7 +208,7 @@
         <div class="logo"><img src="img/img%20logo/logo2.ico" alt="شعار موني"></div>
         <div class="brand-text">
           <div class="site-title"> موني </div>
-          <div class="site-sub">سجافات • كوشات • فساتين</div>
+          <div class="site-sub">سجافات • كوشات • أزياء</div>
         </div>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
@@ -290,7 +290,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <h4><i class="fas fa-info-circle"></i> عن موني</h4>
-          <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والفساتين الفاخرة لأهم مناسباتك.</p>
+          <p class="footer-about">موني هي علامة متخصصة في تأجير السجافات والكوشات والأزياء الفاخرة لأهم مناسباتك.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/Sejafomhsam" class="social-btn" title="فيسبوك" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn" title="انستغرام" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -303,7 +303,7 @@
           <ul>
             <li><a href="index.html?category=سجاف"><i class="fas fa-spa"></i> السجافات</a></li>
             <li><a href="index.html?category=كوشة"><i class="fas fa-gopuram"></i> الكوشات</a></li>
-            <li><a href="index.html?category=فساتين"><i class="fas fa-ring"></i> الفساتين</a></li>
+            <li><a href="index.html?category=أزياء"><i class="fas fa-ring"></i> الأزياء</a></li>
             <li><a href="service.html"><i class="fas fa-star"></i> معرض مشاهير</a></li>
           </ul>
         </div>
@@ -442,6 +442,27 @@
 
     // Load on page ready
     loadProduct();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "منتج موني",
+    "description": "منتج فاخر من موني للتأجير",
+    "brand": {
+      "@type": "Brand",
+      "name": "موني"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "YER",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "موني"
+      }
+    }
+  }
   </script>
 </body>
 </html>
