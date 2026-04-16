@@ -208,6 +208,44 @@
       .search-suggestions{max-height:200px;font-size:11px;max-width:calc(100vw - 16px)}
       .suggestion-item{padding:8px 10px;font-size:11px}
     }
+
+    @media(max-width:480px){
+      .header-inner{padding:8px 6px}
+      .hero{padding:10px 8px;margin:8px 8px}
+      .hero h1{font-size:18px}
+      .hero p{font-size:12px}
+      .container{padding:0 8px 20px}
+      .grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+      .card-body{padding:8px}
+      .title{font-size:14px}
+      .desc{font-size:12px}
+      .btn{font-size:11px;padding:8px}
+      .filters{gap:6px;padding:8px}
+      .filter{padding:8px 12px}
+      .search-wrapper{padding:0 4px;width:calc(100% - 8px)}
+      #searchInput{font-size:11px !important;padding:6px 8px !important}
+      .search-suggestions{max-height:150px;font-size:10px;max-width:calc(100vw - 8px)}
+      .suggestion-item{padding:6px 8px;font-size:10px}
+      .modal{padding:20px}
+      .modal h3{font-size:18px}
+      .modal-item-name{font-size:16px}
+      .modal-description{font-size:13px}
+      .contact-grid{gap:8px}
+      .contact-btn{font-size:12px;padding:12px}
+      .contact-icon{width:40px;height:40px;font-size:20px}
+      .footer-content{max-width:100%;padding:0 8px}
+      .footer-grid{grid-template-columns:1fr;gap:20px}
+      .footer-col h4{font-size:14px}
+      .footer-col li{font-size:12px}
+      .footer-about{font-size:12px}
+      .footer-social{gap:8px}
+      .social-btn{width:36px;height:36px;font-size:16px}
+      .footer-bottom{font-size:11px}
+      .site-title{font-size:14px}
+      .site-sub{font-size:10px}
+      .menu-toggle{padding:6px;font-size:16px}
+      nav.main-nav button, nav.main-nav a{font-size:12px;padding:8px 10px}
+    }
   </style>
 </head>
 <body>
@@ -698,6 +736,13 @@
       return list;
     }
 
+    function getProductActionType(item) {
+      if (item.category === 'أزياء') {
+        return 'شراء';
+      }
+      return 'استاجار';
+    }
+
     function getFilteredList() {
       const q = normalizeSearchQuery(currentSearch.trim()).toLowerCase();
       let list = items;
@@ -820,6 +865,7 @@
 
       cardsGrid.innerHTML = '';
       pageItems.forEach(item => {
+        const actionLabel = getProductActionType(item);
         const card = document.createElement('article');
         card.className = 'card';
         const pillColor = item.color === 'ذهبي' ? '#fcd219' : 
@@ -844,7 +890,7 @@
             <div class="code" style="font-weight:800;font-size:12px;color:#555;margin-top:4px">الرمز: ${item.code}</div>
             <div class="actions">
               <a class="btn details" href="details.html?id=${item.id}">المزيد</a>
-              <button class="btn book" data-id="${item.id}">اجّر الآن</button>
+              <button class="btn book" data-id="${item.id}">${actionLabel}</button>
             </div>
           </div>
         `;
@@ -873,7 +919,9 @@
       btnCall.href = currentItem.phone ? `tel:${currentItem.phone}` : 'tel:+967770075591';
       
       btnWhatsapp.onclick = () => {
-        const text = `مرحباً، أريد استئجار: ${currentItem.name} (الرمز: ${currentItem.code})`;
+        const actionType = getProductActionType(currentItem);
+        const messagePrefix = actionType === 'شراء' ? 'أريد شراء هذا المنتج' : 'أريد استئجار';
+        const text = `${messagePrefix}: ${currentItem.name} (الرمز: ${currentItem.code})`;
         window.open(`https://wa.me/967770075591?text=${encodeURIComponent(text)}`, '_blank');
       };
 
