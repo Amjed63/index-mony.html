@@ -197,6 +197,45 @@
       /* ضمان ان الصورة لا تتجاوز المنطقة */
       img{max-width:100%;height:auto;}
     }
+
+    @media(max-width:600px){
+      .header-inner{padding:10px 8px;}
+      .hero-slider{height:300px;}
+      .slide h1{font-size:24px;}
+      .slide p{font-size:14px;}
+      .slide-buttons{flex-direction:column;}
+      .btn{padding:12px 24px;font-size:13px;}
+      .features{grid-template-columns:1fr;}
+      .categories-grid{grid-template-columns:1fr;}
+      .specials-grid{grid-template-columns:1fr;}
+      .testimonials-grid{grid-template-columns:1fr;}
+      .product-details{padding:0 12px;margin:12px auto;}
+      .product-grid{grid-template-columns:1fr;gap:12px;}
+      .product-gallery .main-image{height:180px;}
+      .product-gallery .thumbnails{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;}
+      .product-gallery .thumbnails img{height:48px;}
+      .product-info h1{font-size:18px;}
+      .product-info .product-type{font-size:12px;}
+      .product-info .features{padding:10px;}
+      .product-info .features h3{font-size:14px;}
+      .product-info .description p{font-size:12px;}
+      .product-info .contact-panel{padding:10px;}
+      .product-info .contact-panel a{font-size:12px;padding:8px;}
+      .product-info .rent-btn{padding:10px;font-size:13px;}
+      .cta-section{padding:40px 12px;}
+      .cta-content h2{font-size:24px;}
+      .cta-content p{font-size:14px;}
+      .cta-buttons{flex-direction:column;}
+      .footer-grid{grid-template-columns:1fr;}
+      .footer-bottom{flex-direction:column;text-align:center;}
+      footer.site-footer{padding:30px 12px 20px;}
+      .section-title{font-size:24px;margin-bottom:24px;}
+      .site-title{font-size:14px;}
+      .site-sub{font-size:9px;}
+      .menu-toggle{padding:6px 8px;font-size:16px;}
+      .nav-links a{font-size:12px;padding:8px;}
+      .nav-links .btn-shop{padding:8px 16px;font-size:12px;}
+    }
   </style>
 </head>
 <body>
@@ -358,6 +397,19 @@
       return params.get('id');
     }
 
+    function getProductActionType(product) {
+      const text = `${product.name || ''} ${product.type || ''}`.toLowerCase();
+      if (product.category === 'أزياء') {
+        if (text.includes('أزياء') || text.includes('أرواب') || text.includes('أروبه')) {
+          return 'شراء';
+        }
+        if (text.includes('فستان') || text.includes('فساتين')) {
+          return 'شراء أو حجز';
+        }
+      }
+      return 'استاجار';
+    }
+
     // Load product from JSON
     async function loadProduct() {
       const productId = getProductId();
@@ -394,6 +446,12 @@
       document.getElementById('productType').textContent = `${currentProduct.type} - الرمز: #${currentProduct.id}`;
       document.getElementById('productDesc').textContent = currentProduct.description || 'منتج فاخر متميز';
 
+      const actionType = getProductActionType(currentProduct);
+      const rentBtn = document.getElementById('rentBtn');
+      if (rentBtn) {
+        rentBtn.innerHTML = `<i class="fas fa-shopping-cart"></i> ${actionType}`;
+      }
+
       // Main image
       const mainImage = document.getElementById('galleryImage');
       mainImage.src = currentProduct.image;
@@ -428,14 +486,17 @@
 
       // WhatsApp button
       const whatsappBtn = document.getElementById('whatsappBtn');
-      const msg = `السلام عليكم، أريد استئجار: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+      const whatsappPrefix = actionType === 'شراء' ? 'أرغب بشراء' : actionType === 'شراء أو حجز' ? 'أريد شراء أو حجز' : 'أريد استئجار';
+      const msg = `السلام عليكم، ${whatsappPrefix}: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
       whatsappBtn.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
     }
 
     // Rent button
     window.rentNow = function() {
       if (currentProduct) {
-        const msg = `أريد استئجار: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+        const actionType = getProductActionType(currentProduct);
+        const prefix = actionType === 'شراء' ? 'أرغب بشراء' : actionType === 'شراء أو حجز' ? 'أريد شراء أو حجز' : 'أريد استئجار';
+        const msg = `${prefix}: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
         window.location.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
       }
     };
