@@ -22,6 +22,29 @@
     "style": "فاخر",
     "color": "بنفسجي"
   },
+
+   {
+    "id": 22,
+    "name": "سجاف جدر  ملكي ",
+    "category": "سجاف",
+    "type": "جدر",
+    "image":"https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/649128740_26279374591674553_8290601133915349507_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=4efbwLXficcQ7kNvwEyA4UO&_nc_oc=Adri4NVy6XlNQ50plg0UELkFKhOKmlUIoemcTllzuPtVFBGhblc1PT9-MJz_RhI87WI&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=Morfnzo8zKYCIB7D9YrhCA&_nc_ss=7a3a8&oh=00_Af1UdXftS66_TnAJic-N-MNGDfH2_AQ8i8Vf2xNuCXrN_g&oe=69E855EB",
+    "description": "سجاف فاخر بتصميم يناسب المناسبات الخاصة.",
+    "features": [
+      "ستاره ابيض على ستاره رمادي+ ورد",
+      "تصميم أنيق",
+      "مناسب لجميع القاعات"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/649128740_26279374591674553_8290601133915349507_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=4efbwLXficcQ7kNvwEyA4UO&_nc_oc=Adri4NVy6XlNQ50plg0UELkFKhOKmlUIoemcTllzuPtVFBGhblc1PT9-MJz_RhI87WI&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=Morfnzo8zKYCIB7D9YrhCA&_nc_ss=7a3a8&oh=00_Af1UdXftS66_TnAJic-N-MNGDfH2_AQ8i8Vf2xNuCXrN_g&oe=69E855EB",
+     "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/647147717_26274181868860492_8672190326848400337_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=QjTDE9NxGfMQ7kNvwH1bIT2&_nc_oc=AdpOLdTVs9dNx-8nHhyVK3aao1Kig3ys9sK7fpTv3JXoLA74-_kSnAKEJMXSXEx4y3I&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=GlWGbAbn-u3oBNaHzg3opg&_nc_ss=7a3a8&oh=00_Af09QoJfDmVxpHyBqMONL1PyxPhVhiDJ28qhV2enX9cqyQ&oe=69E85F7C"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "ملكي",
+    "color": "رمادي"
+  },
   {
     "id": 1,
     "name": "سجاف بورد فاخر",
@@ -62,7 +85,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "حديث",
-    "color": "ملون",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -85,7 +108,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "كلاسيكي",
-    "color": "أبيض",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -101,14 +124,35 @@
       "خامات مرنة"
     ],
     "gallery": [
-      "img/img/4.jpg",
-      "img/img/5.jpg"
+      "img/img/4.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
     "color": "ملون",
+    "email": "omhsam999@gmail.com"
+  },
+    {
+    "id": 23,
+    "name": "سجاف جدر بورد ",
+    "category": "سجاف",
+    "type": "جدر",
+    "image": "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/648999925_26275820135363332_5645905258448479659_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=TaBiFRCtLMkQ7kNvwE-8VRF&_nc_oc=Adr7_Fs76jURsLB1vCGOQDi65VZrus3VvAOmh3SlBn4YhOX8YpvGimu-rKHNdRJSuyM&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=TJcM8XNFwG0drcamk4JQ2g&_nc_ss=7a3a8&oh=00_Af2gGL47mCWMWAnnEnj6EQirj_BjXJCLiIeGFobyXE7hjw&oe=69E86ECF",
+    "description": "مناسب للمساحات الضيقة.",
+    "features": [
+      "  ستاره سكري + ورد ",
+      "مناسب للمساحات الصغيرة",
+      "خفة وزن"
+    ],
+    "gallery": [
+      "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/648999925_26275820135363332_5645905258448479659_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=TaBiFRCtLMkQ7kNvwE-8VRF&_nc_oc=Adr7_Fs76jURsLB1vCGOQDi65VZrus3VvAOmh3SlBn4YhOX8YpvGimu-rKHNdRJSuyM&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=TJcM8XNFwG0drcamk4JQ2g&_nc_ss=7a3a8&oh=00_Af2gGL47mCWMWAnnEnj6EQirj_BjXJCLiIeGFobyXE7hjw&oe=69E86ECF"
+    ],
+    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
+    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "phone": "+967770075591",
+    "style": "مودرن",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -131,9 +175,10 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "فاخر",
-    "color": "ملون",
+    "color": "ابيض",
     "email": "omhsam999@gmail.com"
   },
+
   {
     "id": 6,
     "name": "سجاف جدر صغير",
@@ -153,7 +198,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "مودرن",
-    "color": "ملون",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
