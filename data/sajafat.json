@@ -20,7 +20,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "فاخر",
-    "color": "أبيض"
+    "color": "بنفسجي"
   },
   {
     "id": 1,
@@ -452,6 +452,15 @@
     "color": "أسود",
     "email": "omhsam999@gmail.com"
   },
+
+
+
+
+
+
+
+
+
   {
     "id": 10,
     "name": "فستان زفاف كلاسيكي",
@@ -465,14 +474,13 @@
       "قابل للتعديل"
     ],
     "gallery": [
-      "img/img/dress1.jpg",
-      "img/img/dress2.jpg"
+      "img/img/dress1.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "كلاسيكي",
-    "color": "ملون",
+    "color": "ابيض",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -488,8 +496,7 @@
       "ألوان جذابة"
     ],
     "gallery": [
-      "img/img/dress2.jpg",
-      "img/img/dress3.jpg"
+      "img/img/dress2.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -511,14 +518,13 @@
       "تصميم ملفت"
     ],
     "gallery": [
-      "img/img/dress3.jpg",
-      "img/img/dress4.jpg"
+      "img/img/dress3.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "فاخر",
-    "color": "ملون",
+    "color": "ابيض",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -541,28 +547,6 @@
     "phone": "+967770075591",
     "style": "كلاسيكي",
     "color": "أبيض",
-    "email": "omhsam999@gmail.com"
-  },
-  {
-    "id": 18,
-    "name": "فستان عصري ملون جميل",
-    "category": "أزياء",
-    "type": "عصري",
-    "image": "img/img/dress1.jpg",
-    "description": "فستان عصري بألوان متناسقة وتصميم عملي.",
-    "features": [
-      "تصميم عملي",
-      "خامة مريحة",
-      "ألوان متناسقة"
-    ],
-    "gallery": [
-      "img/img/dress1.jpg"
-    ],
-    "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
-    "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    "phone": "+967770075591",
-    "style": "عصري",
-    "color": "ملون",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -650,7 +634,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "-",
+    "color": "قرمزي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -738,7 +722,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أحمر",
+    "color": "وردي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -782,7 +766,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -804,7 +788,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أصفر",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -826,7 +810,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "وردي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -848,7 +832,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "ابيض",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -870,7 +854,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "برتقالي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -892,7 +876,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -914,7 +898,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "كحلي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -936,7 +920,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أحمر",
+    "color": "برتقالي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -958,7 +942,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أصفر",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -980,7 +964,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1002,7 +986,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أصفر",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1024,7 +1008,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1046,7 +1030,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أزرق",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1068,7 +1052,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أزرق",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1090,7 +1074,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "أزرق",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1112,7 +1096,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1134,7 +1118,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "كحلي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1156,7 +1140,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "سماوي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1178,7 +1162,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "قرمزي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1200,7 +1184,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "قرمزي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1222,7 +1206,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1244,7 +1228,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "بنفسجي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1266,7 +1250,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "بنفسجي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1288,7 +1272,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "أصفر",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1310,7 +1294,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "قرمزي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1332,7 +1316,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "وردي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1354,7 +1338,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "وردي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1376,7 +1360,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أزرق ",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1398,7 +1382,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "كحلي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1420,7 +1404,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "وردي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1442,7 +1426,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "قرمزي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1464,7 +1448,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "أزرق ",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1486,7 +1470,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أسود",
+    "color": "أصفر",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1508,7 +1492,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "كحلي",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1530,7 +1514,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "ملون",
+    "color": "أزرق",
     "email": "omhsam999@gmail.com"
   },
   {
@@ -1552,7 +1536,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أبيض",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   }
 ]
