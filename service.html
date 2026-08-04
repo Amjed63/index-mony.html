@@ -888,7 +888,7 @@
         card.innerHTML = `
           <div class="card-media">
             <span class="card-badge">${item.type}</span>
-            <img src="${item.image}" alt="${item.name}" onerror="this.src='img/img/placeholder.jpg'">
+            <img src="${item.image || 'img/img/1.jpg'}" alt="${item.name}" onerror="this.src='img/img/1.jpg'">
           </div>
           <div class="card-body">
             <div class="title">${item.name}</div>
