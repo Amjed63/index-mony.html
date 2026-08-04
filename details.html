@@ -410,6 +410,14 @@
       return 'استاجار';
     }
 
+    function getProductCode(product) {
+      if (product.code) return product.code;
+      const idStr = String(product.id || '').padStart(3, '0');
+      if (product.category === 'سجاف') return `SJ-${idStr}`;
+      if (product.category === 'كوشة') return `KSH-${idStr}`;
+      return `DR-${idStr}`;
+    }
+
     // Load product from JSON
     async function loadProduct() {
       const productId = getProductId();
@@ -443,7 +451,7 @@
       // Main info
       document.getElementById('productName').textContent = currentProduct.name;
       document.getElementById('categoryLabel').textContent = currentProduct.category;
-      document.getElementById('productType').textContent = `${currentProduct.type} - الرمز: #${currentProduct.id}`;
+      document.getElementById('productType').textContent = `${currentProduct.type} - الرمز: ${getProductCode(currentProduct)}`;
       document.getElementById('productDesc').textContent = currentProduct.description || 'منتج فاخر متميز';
 
       const actionType = getProductActionType(currentProduct);
@@ -454,7 +462,10 @@
 
       // Main image
       const mainImage = document.getElementById('galleryImage');
-      mainImage.src = currentProduct.image;
+      mainImage.src = currentProduct.image || 'img/img/1.jpg';
+      mainImage.onerror = () => {
+        mainImage.src = 'img/img/1.jpg';
+      };
 
       // Thumbnails gallery
       const thumbContainer = document.getElementById('thumbnails');
@@ -463,10 +474,16 @@
       const gallery = currentProduct.gallery || [currentProduct.image];
       gallery.forEach((img, idx) => {
         const thumb = document.createElement('img');
-        thumb.src = img;
+        thumb.src = img || 'img/img/1.jpg';
         thumb.className = idx === 0 ? 'active' : '';
+        thumb.onerror = () => {
+          thumb.src = 'img/img/1.jpg';
+        };
         thumb.onclick = () => {
-          mainImage.src = img;
+          mainImage.src = img || 'img/img/1.jpg';
+          mainImage.onerror = () => {
+            mainImage.src = 'img/img/1.jpg';
+          };
           document.querySelectorAll('#thumbnails img').forEach(t => t.classList.remove('active'));
           thumb.classList.add('active');
         };
@@ -487,7 +504,7 @@
       // WhatsApp button
       const whatsappBtn = document.getElementById('whatsappBtn');
       const whatsappPrefix = actionType === 'شراء' ? 'أرغب بشراء' : actionType === 'شراء أو حجز' ? 'أريد شراء أو حجز' : 'أريد استئجار';
-      const msg = `السلام عليكم، ${whatsappPrefix}: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+      const msg = `السلام عليكم، ${whatsappPrefix}: ${currentProduct.name} (الرمز: ${getProductCode(currentProduct)})`;
       whatsappBtn.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
     }
 
@@ -496,7 +513,7 @@
       if (currentProduct) {
         const actionType = getProductActionType(currentProduct);
         const prefix = actionType === 'شراء' ? 'أرغب بشراء' : actionType === 'شراء أو حجز' ? 'أريد شراء أو حجز' : 'أريد استئجار';
-        const msg = `${prefix}: ${currentProduct.name} (الرمز: #${currentProduct.id})`;
+        const msg = `${prefix}: ${currentProduct.name} (الرمز: ${getProductCode(currentProduct)})`;
         window.location.href = `https://wa.me/+967770075591?text=${encodeURIComponent(msg)}`;
       }
     };
