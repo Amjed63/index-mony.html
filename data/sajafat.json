@@ -215,48 +215,46 @@
       "تركيب احترافي"
     ],
     "gallery": [
-      "img/img/17.jpg",
-      "img/img/18.jpg"
+      "img/img/17.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "تراثي",
-    "color": "أبيض",
+    "color": "سكري",
     "email": "omhsam999@gmail.com"
   },
   {
     "id": 14,
-    "name": "سجاف مهم متطور",
+    "name": "سجاف انيق ",
     "category": "سجاف",
     "type": "مهم",
     "image": "img/img/18.jpg",
-    "description": "سجاف مهم بتقنيات حديثة وألوان عصرية.",
+    "description": "سجاف بألوان عصرية.",
     "features": [
       "تقنيات حديثة",
       "ألوان عصرية",
       "سهل الصيانة"
     ],
     "gallery": [
-      "img/img/18.jpg",
-      "img/img/19.jpg"
+      "img/img/18.jpg"
     ],
     "facebook": "https:\\/\\/www.facebook.com\\/Sejafomhsam",
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "عصري",
-    "color": "أزرق فاتح",
+    "color": "أزرق",
     "email": "omhsam999@gmail.com"
   },
   {
     "id": 19,
-    "name": "سجاف جدر ملكي راقي",
+    "name": "سجاف عصري ",
     "category": "سجاف",
     "type": "مهم",
     "image": "img/img/19.jpg",
-    "description": "سجاف بتصميم ملكي واحترافي جداً.",
+    "description": "سجاف بتصميم عصري.",
     "features": [
-      "تصميم ملكي",
+      "تصميم عصري",
       "خامات ممتازة",
       "تركيب احترافي"
     ],
@@ -267,7 +265,7 @@
     "instagram": "https:\\/\\/www.instagram.com\\/sejaf_mony?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "phone": "+967770075591",
     "style": "فاخر",
-    "color": "أبيض",
+    "color": "أحمر",
     "email": "omhsam999@gmail.com"
   },
   {
